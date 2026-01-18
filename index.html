@@ -6,9 +6,8 @@
   <link rel="stylesheet" href="Styles.css" />
 </head>
 <body>
- <details>
-  <summary>Academic Calendar</summary>
   <table class="wrapper" align="center">    
+    <!-- Header row - always visible -->
     <tr class="header">
       <td class="logo">
         <img
@@ -23,107 +22,182 @@
         <div id="subtitle" class="subtitle"></div>
       </td>
     </tr>
-
-    <!-- Main content -->
+    
+    <!-- Collapsible content row -->
     <tr>
       <td class="content" colspan="2">
-        <div class="legend">
-          <div class="legend-term">
-        <strong>Legend: </strong>
-        <p>Spring: <div class="spring-term-legend"></div></p>
-        <p>Summer: <div class="summer-term-legend"></div></p>
-        <p>Fall: <div class="fall-term-legend"></div></p>
-      </div>
-    </div>
-    
-        <div id="intro"></div>
-
-        <div class="layout">
-        
-          <!-- Calendar container -->
-          <section class="panel calendar">
-            <header class="panel-header blue-header">
-              <h2>Academic Calendar (2025–2026)</h2>
-              <p class="muted inverted">June 2025 → May 2026</p>
-            </header>
-            <div id="calendarGrid" class="calendar-grid"></div>
-          </section>
-
-          <!-- Side column: Calculations + Events -->
-          <div class="side-column">
-            <!-- Calculations panel -->
-            <section class="panel">
+        <details>
+          <summary>School One</summary>
+          
+          <!-- Main content -->
+          <div class="legend">
+            <div class="legend-term">
+              <strong>Legend: </strong>
+              <p>Spring: <div class="spring-term-legend"></div></p>
+              <p>Summer: <div class="summer-term-legend"></div></p>
+              <p>Fall: <div class="fall-term-legend"></div></p>
+            </div>
+          </div>
+          
+          <div id="intro"></div>
+          
+          <div class="layout">
+            <!-- Calendar container -->
+            <section class="panel calendar">
               <header class="panel-header blue-header">
-                <h2>Calculations</h2>
+                <h2>Academic Calendar (2025–2026)</h2>
+                <p class="muted inverted">June 2025 → May 2026</p>
               </header>
-              <div class="panel-body" id="calculations">
-                <ul class="mini-calculations" id="calculations-List"></ul>
-
-                <!-- calculations will go here -->
-              </div>
+              <div id="calendarGrid" class="calendar-grid"></div>
             </section>
-
-            <!-- Events panel -->
+            
+            <!-- Side column: Calculations + Events -->
+            <div class="side-column">
+              <!-- Calculations panel -->
+              <section class="panel">
+                <header class="panel-header blue-header">
+                  <h2>Calculations</h2>
+                </header>
+                <div class="panel-body" id="calculations">
+                  <ul class="mini-calculations" id="calculations-List"></ul>
+                  <!-- calculations will go here -->
+                </div>
+              </section>
+              
+              <!-- Events panel -->
+              <section class="panel">
+                <header class="panel-header blue-header">
+                  <h2>Events</h2>
+                </header>
+                <div class="panel-body" id="events">
+                  <!-- UL to hold events -->
+                  <ul class="mini-events" id="eventsList"></ul>
+                </div>
+              </section>
+            </div>
+          </div>
+          
+          <!-- Accordion panel -->
+          <div class="accordion">
             <section class="panel">
               <header class="panel-header blue-header">
-                <h2>Events</h2>
+                <h2>More info</h2>
               </header>
-              <div class="panel-body" id="events">
-                <!-- UL to hold events -->
-                <ul class="mini-events" id="eventsList"></ul>
-              </div>
             </section>
           </div>
-        </div>
-
-        <!-- Accordion panel -->
-        <div class="accordion">
-          <section class="panel">
-            <header class="panel-header blue-header">
-              <h2>More info</h2>
-            </header>
-          </section>
-        </div>
+          
+        </details>
       </td>
     </tr>
-
+    
     <!-- Optional extra content -->
     <tr>
       <td class="content center" colspan="2" id="extra-slot"></td>
     </tr>
 
+    <tr></tr>
+      <td class="content" colspan="2">
+        <details>
+          <summary>School Two</summary>
+          
+          <!-- Main content -->
+          <div class="legend">
+            <div class="legend-term">
+              <strong>Legend: </strong>
+              <p>Spring: <div class="spring-term-legend"></div></p>
+              <p>Summer: <div class="summer-term-legend"></div></p>
+              <p>Fall: <div class="fall-term-legend"></div></p>
+            </div>
+          </div>
+          
+          <div id="intro"></div>
+          
+          <div class="layout">
+            <!-- Calendar container -->
+            <section class="panel calendar">
+              <header class="panel-header blue-header">
+                <h2>Academic Calendar (2025–2026)</h2>
+                <p class="muted inverted">June 2025 → May 2026</p>
+              </header>
+              <div id="calendarGrid" class="calendar-grid"></div>
+            </section>
+            
+            <!-- Side column: Calculations + Events -->
+            <div class="side-column">
+              <!-- Calculations panel -->
+              <section class="panel">
+                <header class="panel-header blue-header">
+                  <h2>Calculations</h2>
+                </header>
+                <div class="panel-body" id="calculations">
+                  <ul class="mini-calculations" id="calculations-List"></ul>
+                  <!-- calculations will go here -->
+                </div>
+              </section>
+              
+              <!-- Events panel -->
+              <section class="panel">
+                <header class="panel-header blue-header">
+                  <h2>Events</h2>
+                </header>
+                <div class="panel-body" id="events">
+                  <!-- UL to hold events -->
+                  <ul class="mini-events" id="eventsList"></ul>
+                </div>
+              </section>
+            </div>
+          </div>
+          
+          <!-- Accordion panel -->
+          <div class="accordion">
+            <section class="panel">
+              <header class="panel-header blue-header">
+                <h2>More info</h2>
+              </header>
+            </section>
+          </div>
+          
+        </details>
+      </td>
+    </tr>
+    
+    <!-- Optional extra content -->
+    <tr>
+      <td class="content center" colspan="2" id="extra-slot"></td>
+    </tr>
+    
+    <!-- Footer spacer -->
+    <tr>
+      <td class="footer-spacer" colspan="2"></td>
+    </tr>
+  </table>
+    
     <!-- Footer spacer -->
     <tr>
       <td class="footer-spacer" colspan="2"></td>
     </tr>
   </table>
 
+  
+  
   <!-- Fetch events from JSON and insert into UL -->
   <script>
     // Select the <ul> where events will be added
-      const listEl = document.getElementById('eventsList');
-
-fetch('./calendar.json')
-  .then(res => res.json())
-  .then(data => {
-    data["SC-2025--1A-1A-1A"]["2025"].forEach(post => {
-      const termClass = post.TERM_DESC.toLowerCase();
-      listEl.insertAdjacentHTML('beforeend', `
-        <li class="eventone ${termClass}">
-          <strong>${post.EVENT_DESCRIPTION}</strong>
-          <small>Code: ${post.EVENT_CODE} | Start: ${post.START} | End: ${post.END || 'TBD'}</small>
-        </li>
-      `);
-    });
-  });
-
-      
+    const listEl = document.getElementById('eventsList');
+    fetch('./calendar.json')
+      .then(res => res.json())
+      .then(data => {
+        data["SC-2025--1A-1A-1A"]["2025"].forEach(post => {
+          const termClass = post.TERM_DESC.toLowerCase();
+          listEl.insertAdjacentHTML('beforeend', `
+            <li class="eventone ${termClass}">
+              <strong>${post.EVENT_DESCRIPTION}</strong>
+              <small>Code: ${post.EVENT_CODE} | Start: ${post.START} | End: ${post.END || 'TBD'}</small>
+            </li>
+          `);
+        });
+      });
   </script>
-
   <script src="app.js"></script>
-
-</table>
-</details>
 </body>
 </html>
- 

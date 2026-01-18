@@ -1,0 +1,114 @@
+{
+    "SC-2025--1A-1A-1A": {
+      "2025": [
+        {
+          "TERM": 70,
+          "TERM_DESC": "Spring",
+          "POT_KEY": "1A",
+          "START": "1/2/2026",
+          "END": "12/29/2026",
+          "EVENT_CODE": "TRM",
+          "EVENT_DESCRIPTION": "Term Duration"
+        },
+        {
+          "TERM": 70,
+          "TERM_DESC": "Spring",
+          "POT_KEY": "1A",
+          "START": "1/18/2026",  
+          "END": null,
+          "EVENT_CODE": "DSB",
+          "EVENT_DESCRIPTION": "Disbursement Date"
+        },
+        {
+          "TERM": 70,
+          "TERM_DESC": "Spring",
+          "POT_KEY": "1A",
+          "START": "2/1/2025",
+          "END": null,
+          "EVENT_CODE": "WID",
+          "EVENT_DESCRIPTION": "Last Day to Withdraw"
+        },
+        {
+          "TERM": 70,
+          "TERM_DESC": "Spring",
+          "POT_KEY": "1A",
+          "START": "11/18/2024",
+          "END": "1/17/2025",
+          "EVENT_CODE": "REG",
+          "EVENT_DESCRIPTION": "Registration Open"
+        },
+        {
+          "TERM": 10,
+          "TERM_DESC": "Summer",
+          "POT_KEY": "1A",
+          "START": "4/16/2025",
+          "END": "6/15/2025",
+          "EVENT_CODE": "REG",
+          "EVENT_DESCRIPTION": "Registration Open"
+        },
+        {
+          "TERM": 10,
+          "TERM_DESC": "Summer",
+          "POT_KEY": "1A",
+          "START": "6/1/2025",
+          "END": "9/30/2025",
+          "EVENT_CODE": "TRM",
+          "EVENT_DESCRIPTION": "Term Duration"
+        },
+        {
+          "TERM": 10,
+          "TERM_DESC": "Summer",
+          "POT_KEY": "1A",
+          "START": "6/16/2025",
+          "END": null,
+          "EVENT_CODE": "DSB",
+          "EVENT_DESCRIPTION": "Disbursement Date"
+        },
+        {
+          "TERM": 10,
+          "TERM_DESC": "Summer",
+          "POT_KEY": "1A",
+          "START": "6/30/2025",
+          "END": null,
+          "EVENT_CODE": "WID",
+          "EVENT_DESCRIPTION": "Last Day to Withdraw"
+        },
+        {
+          "TERM": 30,
+          "TERM_DESC": "Fall",
+          "POT_KEY": "1A",
+          "START": "7/19/2025",
+          "END": "9/17/2025",
+          "EVENT_CODE": "REG",
+          "EVENT_DESCRIPTION": "Registration Open"
+        },
+        {
+          "TERM": 30,
+          "TERM_DESC": "Fall",
+          "POT_KEY": "1A",
+          "START": "9/3/2025",
+          "END": "12/31/2025",
+          "EVENT_CODE": "TRM",
+          "EVENT_DESCRIPTION": "Term Duration"
+        },
+        {
+          "TERM": 30,
+          "TERM_DESC": "Fall",
+          "POT_KEY": "1A",
+          "START": "9/18/2025",
+          "END": null,
+          "EVENT_CODE": "DSB",
+          "EVENT_DESCRIPTION": "Disbursement Date"
+        },
+        {
+          "TERM": 30,
+          "TERM_DESC": "Fall",
+          "POT_KEY": "1A",
+          "START": "10/2/2025",
+          "END": null,
+          "EVENT_CODE": "WID",
+          "EVENT_DESCRIPTION": "Last Day to Withdraw"
+        }
+      ]
+    }
+  }
