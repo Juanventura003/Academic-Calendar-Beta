@@ -182,21 +182,36 @@
   
   <!-- Fetch events from JSON and insert into UL -->
   <script>
-    // Select the <ul> where events will be added
-    const listEl = document.getElementById('eventsList');
-    fetch('./calendar.json')
-      .then(res => res.json())
-      .then(data => {
-        data["SC-2025--1A-1A-1A"]["2025"].forEach(post => {
-          const termClass = post.TERM_DESC.toLowerCase();
-          listEl.insertAdjacentHTML('beforeend', `
-            <li class="eventone ${termClass}">
-              <strong>${post.EVENT_DESCRIPTION}</strong>
-              <small>Code: ${post.EVENT_CODE} | Start: ${post.START} | End: ${post.END || 'TBD'}</small>
-            </li>
-          `);
-        });
+    const listElSchool1 = document.querySelectorAll('#eventsList')[0];
+  fetch('./calendar.json')
+    .then(res => res.json())
+    .then(data => {
+      data["SC-2025--1A-1A-1A"]["2025"].forEach(post => {
+        const termClass = post.TERM_DESC.toLowerCase();
+        listElSchool1.insertAdjacentHTML('beforeend', `
+          <li class="eventone ${termClass}">
+            <strong>${post.EVENT_DESCRIPTION}</strong>
+            <small>Code: ${post.EVENT_CODE} | Start: ${post.START} | End: ${post.END || 'TBD'}</small>
+          </li>
+        `);
       });
+    });
+  
+  // School Two Events
+  const listElSchool2 = document.querySelectorAll('#eventsList')[1];
+  fetch('./calendar2.json')
+    .then(res => res.json())
+    .then(data => {
+      data["SC-2025--2B-2B-2B"]["2025"].forEach(post => {
+        const termClass = post.TERM_DESC.toLowerCase();
+        listElSchool2.insertAdjacentHTML('beforeend', `
+          <li class="eventone ${termClass}">
+            <strong>${post.EVENT_DESCRIPTION}</strong>
+            <small>Code: ${post.EVENT_CODE} | Start: ${post.START} | End: ${post.END || 'TBD'}</small>
+          </li>
+        `);
+      });
+    });
   </script>
   <script src="app.js"></script>
 </body>
