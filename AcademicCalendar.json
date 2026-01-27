@@ -1,0 +1,485 @@
+{
+    "2026||3R|3R|3R":  {
+                           "2026":  [
+                                        {
+                                            "TERM":  70,
+                                            "TERM_DESC":  "Spring",
+                                            "POT_KEY":  "3R",
+                                            "START":  "1/25/2027",
+                                            "END":  "6/9/2027",
+                                            "EVENT_CODE":  "TRM",
+                                            "EVENT_DESCRIPTION":  "Term Duration"
+                                        },
+                                        {
+                                            "TERM":  10,
+                                            "TERM_DESC":  "Summer",
+                                            "POT_KEY":  "3R",
+                                            "START":  "6/22/2026",
+                                            "END":  "8/11/2026",
+                                            "EVENT_CODE":  "TRM",
+                                            "EVENT_DESCRIPTION":  "Term Duration"
+                                        },
+                                        {
+                                            "TERM":  30,
+                                            "TERM_DESC":  "Fall",
+                                            "POT_KEY":  "3R",
+                                            "START":  "8/30/2026",
+                                            "END":  "1/10/2027",
+                                            "EVENT_CODE":  "TRM",
+                                            "EVENT_DESCRIPTION":  "Term Duration"
+                                        },
+                                        {
+                                            "TERM":  10,
+                                            "TERM_DESC":  "Summer",
+                                            "POT_KEY":  "3R",
+                                            "START":  "3/23/2026",
+                                            "END":  "3/23/2026",
+                                            "EVENT_CODE":  "REG",
+                                            "EVENT_DESCRIPTION":  "Registration Open"
+                                        },
+                                        {
+                                            "TERM":  70,
+                                            "TERM_DESC":  "Spring",
+                                            "POT_KEY":  "3R",
+                                            "START":  "11/9/2026",
+                                            "END":  "11/9/2026",
+                                            "EVENT_CODE":  "REG",
+                                            "EVENT_DESCRIPTION":  "Registration Open"
+                                        },
+                                        {
+                                            "TERM":  30,
+                                            "TERM_DESC":  "Fall",
+                                            "POT_KEY":  "3R",
+                                            "START":  "3/23/2026",
+                                            "END":  "3/23/2026",
+                                            "EVENT_CODE":  "REG",
+                                            "EVENT_DESCRIPTION":  "Registration Open"
+                                        },
+                                        {
+                                            "TERM":  70,
+                                            "TERM_DESC":  "Spring",
+                                            "POT_KEY":  "3R",
+                                            "START":  "6/9/2027",
+                                            "END":  null,
+                                            "EVENT_CODE":  "WID",
+                                            "EVENT_DESCRIPTION":  "Last Day to Withdraw"
+                                        },
+                                        {
+                                            "TERM":  10,
+                                            "TERM_DESC":  "Summer",
+                                            "POT_KEY":  "3R",
+                                            "START":  "8/11/2026",
+                                            "END":  null,
+                                            "EVENT_CODE":  "WID",
+                                            "EVENT_DESCRIPTION":  "Last Day to Withdraw"
+                                        },
+                                        {
+                                            "TERM":  30,
+                                            "TERM_DESC":  "Fall",
+                                            "POT_KEY":  "3R",
+                                            "START":  "1/10/2027",
+                                            "END":  null,
+                                            "EVENT_CODE":  "WID",
+                                            "EVENT_DESCRIPTION":  "Last Day to Withdraw"
+                                        }
+                                    ]
+                       },
+    "2026||1G-1H-2X|2X|2X":  {
+                                 "2026":  [
+                                              {
+                                                  "TERM":  70,
+                                                  "TERM_DESC":  "Spring",
+                                                  "POT_KEY":  "2X",
+                                                  "START":  "1/25/2027",
+                                                  "END":  "6/9/2027",
+                                                  "EVENT_CODE":  "TRM",
+                                                  "EVENT_DESCRIPTION":  "Term Duration"
+                                              },
+                                              {
+                                                  "TERM":  10,
+                                                  "TERM_DESC":  "Summer",
+                                                  "POT_KEY":  "1G-1H-2X",
+                                                  "START":  "6/22/2026",
+                                                  "END":  "8/19/2026",
+                                                  "EVENT_CODE":  "TRM",
+                                                  "EVENT_DESCRIPTION":  "Term Duration"
+                                              },
+                                              {
+                                                  "TERM":  30,
+                                                  "TERM_DESC":  "Fall",
+                                                  "POT_KEY":  "2X",
+                                                  "START":  "8/30/2026",
+                                                  "END":  "1/10/2027",
+                                                  "EVENT_CODE":  "TRM",
+                                                  "EVENT_DESCRIPTION":  "Term Duration"
+                                              },
+                                              {
+                                                  "TERM":  30,
+                                                  "TERM_DESC":  "Fall",
+                                                  "POT_KEY":  "2X",
+                                                  "START":  "3/23/2026",
+                                                  "END":  "3/23/2026",
+                                                  "EVENT_CODE":  "REG",
+                                                  "EVENT_DESCRIPTION":  "Registration Open"
+                                              },
+                                              {
+                                                  "TERM":  70,
+                                                  "TERM_DESC":  "Spring",
+                                                  "POT_KEY":  "2X",
+                                                  "START":  "11/9/2026",
+                                                  "END":  "11/9/2026",
+                                                  "EVENT_CODE":  "REG",
+                                                  "EVENT_DESCRIPTION":  "Registration Open"
+                                              },
+                                              {
+                                                  "TERM":  10,
+                                                  "TERM_DESC":  "Summer",
+                                                  "POT_KEY":  "1G-1H-2X",
+                                                  "START":  "3/23/2026",
+                                                  "END":  "3/23/2026",
+                                                  "EVENT_CODE":  "REG",
+                                                  "EVENT_DESCRIPTION":  "Registration Open"
+                                              },
+                                              {
+                                                  "TERM":  30,
+                                                  "TERM_DESC":  "Fall",
+                                                  "POT_KEY":  "2X",
+                                                  "START":  "1/10/2027",
+                                                  "END":  null,
+                                                  "EVENT_CODE":  "WID",
+                                                  "EVENT_DESCRIPTION":  "Last Day to Withdraw"
+                                              },
+                                              {
+                                                  "TERM":  10,
+                                                  "TERM_DESC":  "Summer",
+                                                  "POT_KEY":  "1G-1H-2X",
+                                                  "START":  "7/15/2026",
+                                                  "END":  null,
+                                                  "EVENT_CODE":  "WID",
+                                                  "EVENT_DESCRIPTION":  "Last Day to Withdraw"
+                                              },
+                                              {
+                                                  "TERM":  70,
+                                                  "TERM_DESC":  "Spring",
+                                                  "POT_KEY":  "2X",
+                                                  "START":  "6/9/2027",
+                                                  "END":  null,
+                                                  "EVENT_CODE":  "WID",
+                                                  "EVENT_DESCRIPTION":  "Last Day to Withdraw"
+                                              }
+                                          ]
+                             },
+    "2026||3W|3W|3W":  {
+                           "2026":  [
+                                        {
+                                            "TERM":  30,
+                                            "TERM_DESC":  "Fall",
+                                            "POT_KEY":  "3W",
+                                            "START":  "9/1/2026",
+                                            "END":  "12/31/2026",
+                                            "EVENT_CODE":  "TRM",
+                                            "EVENT_DESCRIPTION":  "Term Duration"
+                                        },
+                                        {
+                                            "TERM":  10,
+                                            "TERM_DESC":  "Summer",
+                                            "POT_KEY":  "3W",
+                                            "START":  "6/1/2026",
+                                            "END":  "8/31/2026",
+                                            "EVENT_CODE":  "TRM",
+                                            "EVENT_DESCRIPTION":  "Term Duration"
+                                        },
+                                        {
+                                            "TERM":  70,
+                                            "TERM_DESC":  "Spring",
+                                            "POT_KEY":  "3W",
+                                            "START":  "1/1/2027",
+                                            "END":  "5/31/2027",
+                                            "EVENT_CODE":  "TRM",
+                                            "EVENT_DESCRIPTION":  "Term Duration"
+                                        },
+                                        {
+                                            "TERM":  10,
+                                            "TERM_DESC":  "Summer",
+                                            "POT_KEY":  "3W",
+                                            "START":  "3/23/2026",
+                                            "END":  "3/23/2026",
+                                            "EVENT_CODE":  "REG",
+                                            "EVENT_DESCRIPTION":  "Registration Open"
+                                        },
+                                        {
+                                            "TERM":  70,
+                                            "TERM_DESC":  "Spring",
+                                            "POT_KEY":  "3W",
+                                            "START":  "11/9/2026",
+                                            "END":  "11/9/2026",
+                                            "EVENT_CODE":  "REG",
+                                            "EVENT_DESCRIPTION":  "Registration Open"
+                                        },
+                                        {
+                                            "TERM":  30,
+                                            "TERM_DESC":  "Fall",
+                                            "POT_KEY":  "3W",
+                                            "START":  "3/23/2026",
+                                            "END":  "3/23/2026",
+                                            "EVENT_CODE":  "REG",
+                                            "EVENT_DESCRIPTION":  "Registration Open"
+                                        },
+                                        {
+                                            "TERM":  10,
+                                            "TERM_DESC":  "Summer",
+                                            "POT_KEY":  "3W",
+                                            "START":  "8/31/2026",
+                                            "END":  null,
+                                            "EVENT_CODE":  "WID",
+                                            "EVENT_DESCRIPTION":  "Last Day to Withdraw"
+                                        },
+                                        {
+                                            "TERM":  30,
+                                            "TERM_DESC":  "Fall",
+                                            "POT_KEY":  "3W",
+                                            "START":  "12/31/2026",
+                                            "END":  null,
+                                            "EVENT_CODE":  "WID",
+                                            "EVENT_DESCRIPTION":  "Last Day to Withdraw"
+                                        },
+                                        {
+                                            "TERM":  70,
+                                            "TERM_DESC":  "Spring",
+                                            "POT_KEY":  "3W",
+                                            "START":  "5/31/2027",
+                                            "END":  null,
+                                            "EVENT_CODE":  "WID",
+                                            "EVENT_DESCRIPTION":  "Last Day to Withdraw"
+                                        }
+                                    ]
+                       },
+    "2026||3U-3V|3U|3U":  {
+                              "2026":  [
+                                           {
+                                               "TERM":  70,
+                                               "TERM_DESC":  "Spring",
+                                               "POT_KEY":  "3U",
+                                               "START":  "1/25/2027",
+                                               "END":  "5/20/2027",
+                                               "EVENT_CODE":  "TRM",
+                                               "EVENT_DESCRIPTION":  "Term Duration"
+                                           },
+                                           {
+                                               "TERM":  10,
+                                               "TERM_DESC":  "Summer",
+                                               "POT_KEY":  "3U-3V",
+                                               "START":  "6/1/2026",
+                                               "END":  "8/21/2026",
+                                               "EVENT_CODE":  "TRM",
+                                               "EVENT_DESCRIPTION":  "Term Duration"
+                                           },
+                                           {
+                                               "TERM":  30,
+                                               "TERM_DESC":  "Fall",
+                                               "POT_KEY":  "3U",
+                                               "START":  "8/30/2026",
+                                               "END":  "12/23/2026",
+                                               "EVENT_CODE":  "TRM",
+                                               "EVENT_DESCRIPTION":  "Term Duration"
+                                           },
+                                           {
+                                               "TERM":  30,
+                                               "TERM_DESC":  "Fall",
+                                               "POT_KEY":  "3U",
+                                               "START":  "3/24/2026",
+                                               "END":  "3/24/2026",
+                                               "EVENT_CODE":  "REG",
+                                               "EVENT_DESCRIPTION":  "Registration Open"
+                                           },
+                                           {
+                                               "TERM":  10,
+                                               "TERM_DESC":  "Summer",
+                                               "POT_KEY":  "3U-3V",
+                                               "START":  "3/10/2026",
+                                               "END":  "3/10/2026",
+                                               "EVENT_CODE":  "REG",
+                                               "EVENT_DESCRIPTION":  "Registration Open"
+                                           },
+                                           {
+                                               "TERM":  70,
+                                               "TERM_DESC":  "Spring",
+                                               "POT_KEY":  "3U",
+                                               "START":  "11/3/2026",
+                                               "END":  "11/3/2026",
+                                               "EVENT_CODE":  "REG",
+                                               "EVENT_DESCRIPTION":  "Registration Open"
+                                           },
+                                           {
+                                               "TERM":  10,
+                                               "TERM_DESC":  "Summer",
+                                               "POT_KEY":  "3U-3V",
+                                               "START":  "7/21/2026",
+                                               "END":  null,
+                                               "EVENT_CODE":  "WID",
+                                               "EVENT_DESCRIPTION":  "Last Day to Withdraw"
+                                           },
+                                           {
+                                               "TERM":  30,
+                                               "TERM_DESC":  "Fall",
+                                               "POT_KEY":  "3U",
+                                               "START":  "12/23/2026",
+                                               "END":  null,
+                                               "EVENT_CODE":  "WID",
+                                               "EVENT_DESCRIPTION":  "Last Day to Withdraw"
+                                           },
+                                           {
+                                               "TERM":  70,
+                                               "TERM_DESC":  "Spring",
+                                               "POT_KEY":  "3U",
+                                               "START":  "5/20/2027",
+                                               "END":  null,
+                                               "EVENT_CODE":  "WID",
+                                               "EVENT_DESCRIPTION":  "Last Day to Withdraw"
+                                           }
+                                       ]
+                          },
+    "2026||2X|2X":  {
+                        "2026":  [
+                                     {
+                                         "TERM":  30,
+                                         "TERM_DESC":  "Fall",
+                                         "POT_KEY":  "2X",
+                                         "START":  "8/30/2026",
+                                         "END":  "1/10/2027",
+                                         "EVENT_CODE":  "TRM",
+                                         "EVENT_DESCRIPTION":  "Term Duration"
+                                     },
+                                     {
+                                         "TERM":  70,
+                                         "TERM_DESC":  "Spring",
+                                         "POT_KEY":  "2X",
+                                         "START":  "1/25/2027",
+                                         "END":  "6/9/2027",
+                                         "EVENT_CODE":  "TRM",
+                                         "EVENT_DESCRIPTION":  "Term Duration"
+                                     },
+                                     {
+                                         "TERM":  70,
+                                         "TERM_DESC":  "Spring",
+                                         "POT_KEY":  "2X",
+                                         "START":  "11/9/2026",
+                                         "END":  "11/9/2026",
+                                         "EVENT_CODE":  "REG",
+                                         "EVENT_DESCRIPTION":  "Registration Open"
+                                     },
+                                     {
+                                         "TERM":  30,
+                                         "TERM_DESC":  "Fall",
+                                         "POT_KEY":  "2X",
+                                         "START":  "3/23/2026",
+                                         "END":  "3/23/2026",
+                                         "EVENT_CODE":  "REG",
+                                         "EVENT_DESCRIPTION":  "Registration Open"
+                                     },
+                                     {
+                                         "TERM":  30,
+                                         "TERM_DESC":  "Fall",
+                                         "POT_KEY":  "2X",
+                                         "START":  "1/10/2027",
+                                         "END":  null,
+                                         "EVENT_CODE":  "WID",
+                                         "EVENT_DESCRIPTION":  "Last Day to Withdraw"
+                                     },
+                                     {
+                                         "TERM":  70,
+                                         "TERM_DESC":  "Spring",
+                                         "POT_KEY":  "2X",
+                                         "START":  "6/9/2027",
+                                         "END":  null,
+                                         "EVENT_CODE":  "WID",
+                                         "EVENT_DESCRIPTION":  "Last Day to Withdraw"
+                                     }
+                                 ]
+                    },
+    "2026||3S|3S|3S":  {
+                           "2026":  [
+                                        {
+                                            "TERM":  10,
+                                            "TERM_DESC":  "Summer",
+                                            "POT_KEY":  "3S",
+                                            "START":  "6/22/2026",
+                                            "END":  "8/11/2026",
+                                            "EVENT_CODE":  "TRM",
+                                            "EVENT_DESCRIPTION":  "Term Duration"
+                                        },
+                                        {
+                                            "TERM":  30,
+                                            "TERM_DESC":  "Fall",
+                                            "POT_KEY":  "3S",
+                                            "START":  "8/30/2026",
+                                            "END":  "1/10/2027",
+                                            "EVENT_CODE":  "TRM",
+                                            "EVENT_DESCRIPTION":  "Term Duration"
+                                        },
+                                        {
+                                            "TERM":  70,
+                                            "TERM_DESC":  "Spring",
+                                            "POT_KEY":  "3S",
+                                            "START":  "1/25/2027",
+                                            "END":  "6/9/2027",
+                                            "EVENT_CODE":  "TRM",
+                                            "EVENT_DESCRIPTION":  "Term Duration"
+                                        },
+                                        {
+                                            "TERM":  30,
+                                            "TERM_DESC":  "Fall",
+                                            "POT_KEY":  "3S",
+                                            "START":  "3/23/2026",
+                                            "END":  "3/23/2026",
+                                            "EVENT_CODE":  "REG",
+                                            "EVENT_DESCRIPTION":  "Registration Open"
+                                        },
+                                        {
+                                            "TERM":  10,
+                                            "TERM_DESC":  "Summer",
+                                            "POT_KEY":  "3S",
+                                            "START":  "3/23/2026",
+                                            "END":  "3/23/2026",
+                                            "EVENT_CODE":  "REG",
+                                            "EVENT_DESCRIPTION":  "Registration Open"
+                                        },
+                                        {
+                                            "TERM":  70,
+                                            "TERM_DESC":  "Spring",
+                                            "POT_KEY":  "3S",
+                                            "START":  "11/9/2026",
+                                            "END":  "11/9/2026",
+                                            "EVENT_CODE":  "REG",
+                                            "EVENT_DESCRIPTION":  "Registration Open"
+                                        },
+                                        {
+                                            "TERM":  10,
+                                            "TERM_DESC":  "Summer",
+                                            "POT_KEY":  "3S",
+                                            "START":  "8/11/2026",
+                                            "END":  null,
+                                            "EVENT_CODE":  "WID",
+                                            "EVENT_DESCRIPTION":  "Last Day to Withdraw"
+                                        },
+                                        {
+                                            "TERM":  70,
+                                            "TERM_DESC":  "Spring",
+                                            "POT_KEY":  "3S",
+                                            "START":  "6/9/2027",
+                                            "END":  null,
+                                            "EVENT_CODE":  "WID",
+                                            "EVENT_DESCRIPTION":  "Last Day to Withdraw"
+                                        },
+                                        {
+                                            "TERM":  30,
+                                            "TERM_DESC":  "Fall",
+                                            "POT_KEY":  "3S",
+                                            "START":  "1/10/2027",
+                                            "END":  null,
+                                            "EVENT_CODE":  "WID",
+                                            "EVENT_DESCRIPTION":  "Last Day to Withdraw"
+                                        }
+                                    ]
+                       }
+}
