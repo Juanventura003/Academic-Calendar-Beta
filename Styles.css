@@ -248,12 +248,12 @@ body {
   }
   
   .day.summer-term {
-    background-color: #F4C542 !important; 
+    background-color: #4AA8D8 !important; 
     color: white !important;
   }
   
   .day.fall-term {
-    background-color:  #4AA8D8 !important; 
+    background-color:  #F4C542 !important; 
     color: white !important;
   }
   
@@ -284,7 +284,7 @@ body {
       width:20px;
       vertical-align: middle;
       border: solid 2px lightgray;
-      background-color: #F4C542;
+      background-color: #F4C542 ;
   
   
     }
@@ -295,7 +295,7 @@ body {
       width:20px;
       vertical-align: middle;
       border: solid 2px lightgray;
-      background-color: #4AA8D8 ;
+      background-color:#4AA8D8; 
   
   
     }

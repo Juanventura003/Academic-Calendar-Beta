@@ -26,9 +26,11 @@ function checkIfDateInTerm(date, termData) {
 
 // ===== MAIN CALENDAR BUILDING SECTION =====
 
+function buildSchoolCalendar(calendarId, calculationsListId, schoolKey) {
+
 // Get the container elements from HTML
-const calendarContainer = document.getElementById("calendarGrid");
-const calculationsList = document.getElementById('calculations-List');
+const calendarContainer = document.getElementById(calendarId);
+const calculationsList = document.getElementById(calculationsListId);
 console.log("Calendar grid element:", calendarContainer); // Debug check
 
 if (calendarContainer) {
@@ -40,7 +42,7 @@ if (calendarContainer) {
   
   // ===== FETCH SEMESTER DATA FROM JSON FILE =====
   
-  fetch('./calendar.json')
+  fetch('./AcademicCalendar.json')
     .then(response => {
       console.log("Fetch response:", response);
       return response.json();
@@ -49,7 +51,7 @@ if (calendarContainer) {
       console.log("JSON data loaded:", calendarData);
       
       // Navigate through the JSON structure to get all events
-      const allEvents = calendarData["SC-2025--1A-1A-1A"]["2025"];
+      const allEvents = calendarData[schoolKey]["2026"];
       console.log("Events:", allEvents);
       
       // Filter to get only term events (EVENT_CODE === "TRM")
@@ -257,6 +259,8 @@ if (calendarContainer) {
       // ===== ERROR HANDLING =====
       console.error('Error loading calendar data:', error);
       console.log("Building fallback calendar without highlighting...");
+
+
       
       // ===== FALLBACK CALENDAR (NO HIGHLIGHTING) =====
       const fallbackStartDate = new Date(2025, 5, 1);
@@ -303,4 +307,10 @@ if (calendarContainer) {
         calendarContainer.appendChild(monthContainer);
       }
     });
+
+    
+  }
 }
+// Build calendars for each school
+buildSchoolCalendar("calendarGrid-school1", "calculationsList-school1", "2026||3R|3R|3R");
+buildSchoolCalendar("calendarGrid-school2", "calculationsList-school2", "2026||1G-1H-2X|2X|2X");
