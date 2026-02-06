@@ -23,154 +23,8 @@
         </td>
       </tr>
       
-      <!-- Collapsible content row -->
-      <tr>
-        <td class="content" colspan="2">
-          <details>
-            <summary>School One</summary>
-            
-            <!-- Main content -->
-            <div class="legend">
-              <div class="legend-term">
-                <strong>Legend: </strong>
-                <p>Spring: <div class="spring-term-legend"></div></p>
-                <p>Summer: <div class="summer-term-legend"></div></p>
-                <p>Fall: <div class="fall-term-legend"></div></p>
-              </div>
-            </div>
-            
-            <div id="intro-school1"></div>
-            
-            <div class="layout">
-              <!-- Calendar container -->
-              <section class="panel calendar">
-                <header class="panel-header blue-header">
-                  <h2>Academic Calendar (2025–2026)</h2>
-                  <p class="muted inverted">June 2025 → May 2026</p>
-                </header>
-                <div id="calendarGrid-school1" class="calendar-grid"></div>
-              </section>
-              
-              <!-- Side column: Calculations + Events -->
-              <div class="side-column">
-                <!-- Calculations panel -->
-                <section class="panel">
-                  <header class="panel-header blue-header">
-                    <h2>Calculations</h2>
-                  </header>
-                  <div class="panel-body" id="calculations-school1">
-                    <ul class="mini-calculations" id="calculationsList-school1"></ul>
-                    <!-- calculations will go here -->
-                  </div>
-                </section>
-                
-                <!-- Events panel -->
-                <section class="panel">
-                  <header class="panel-header blue-header">
-                    <h2>Events</h2>
-                  </header>
-                  <div class="panel-body" id="events-school1">
-                    <!-- UL to hold events -->
-                    <ul class="mini-events" id="eventsList-school1"></ul>
-                  </div>
-                </section>
-              </div>
-            </div>
-            
-            <!-- Accordion panel -->
-            <div class="accordion">
-              <section class="panel">
-                <header class="panel-header blue-header">
-                  <h2>More info</h2>
-                </header>
-              </section>
-            </div>
-            
-          </details>
-        </td>
-      </tr>
-      
-      <!-- Optional extra content -->
-      <tr>
-        <td class="content center" colspan="2" id="extra-slot"></td>
-      </tr>
-
-      <tr></tr>
-        <td class="content" colspan="2">
-          <details>
-            <summary>School Two</summary>
-            
-            <!-- Main content -->
-            <div class="legend">
-              <div class="legend-term">
-                <strong>Legend: </strong>
-                <p>Spring: <div class="spring-term-legend"></div></p>
-                <p>Summer: <div class="summer-term-legend"></div></p>
-                <p>Fall: <div class="fall-term-legend"></div></p>
-              </div>
-            </div>
-            
-            <div id="intro-school2"></div>
-            
-            <div class="layout">
-              <!-- Calendar container -->
-              <section class="panel calendar">
-                <header class="panel-header blue-header">
-                  <h2>Academic Calendar (2025–2026)</h2>
-                  <p class="muted inverted">June 2025 → May 2026</p>
-                </header>
-                <div id="calendarGrid-school2" class="calendar-grid"></div>
-              </section>
-              
-              <!-- Side column: Calculations + Events -->
-              <div class="side-column">
-                <!-- Calculations panel -->
-                <section class="panel">
-                  <header class="panel-header blue-header">
-                    <h2>Calculations</h2>
-                  </header>
-                  <div class="panel-body" id="calculations-school2">
-                    <ul class="mini-calculations" id="calculationsList-school2"></ul>
-                    <!-- calculations will go here -->
-                  </div>
-                </section>
-                
-                <!-- Events panel -->
-                <section class="panel">
-                  <header class="panel-header blue-header">
-                    <h2>Events</h2>
-                  </header>
-                  <div class="panel-body" id="events-school2">
-                    <!-- UL to hold events -->
-                    <ul class="mini-events" id="eventsList-school2"></ul>
-                  </div>
-                </section>
-              </div>
-            </div>
-            
-            <!-- Accordion panel -->
-            <div class="accordion">
-              <section class="panel">
-                <header class="panel-header blue-header">
-                  <h2>More info</h2>
-                </header>
-              </section>
-            </div>
-            
-          </details>
-        </td>
-      </tr>
-      
-      <!-- Optional extra content -->
-      <tr>
-        <td class="content center" colspan="2" id="extra-slot"></td>
-      </tr>
-      
-      <!-- Footer spacer -->
-      <tr>
-        <td class="footer-spacer" colspan="2"></td>
-      </tr>
-    </table>
+      <!-- Container where schools will be dynamically inserted -->
+      <tbody id="schools-container"></tbody>
       
       <!-- Footer spacer -->
       <tr>
@@ -178,50 +32,129 @@
       </tr>
     </table>
 
-    <!-- Fetch events from JSON and insert into UL -->
+    <!-- Dynamic school generation script -->
     <script>
       console.log("Script is starting!");
       
-      // School One
-      const listElSchool1 = document.querySelectorAll('#eventsList-school1')[0];
-      console.log("listElSchool1:", listElSchool1);
+      // Function to create HTML for one school
+      function createSchoolHTML(schoolKey, index) {
+        return `
+          <tr>
+            <td class="content" colspan="2">
+              <details>
+                <summary id="summary-school${index}">${schoolKey}</summary>
+                
+                <div class="legend">
+                  <div class="legend-term">
+                    <strong>Legend: </strong>
+                    <p>Spring: <div class="spring-term-legend"></div></p>
+                    <p>Summer: <div class="summer-term-legend"></div></p>
+                    <p>Fall: <div class="fall-term-legend"></div></p>
+                  </div>
+                </div>
+                
+                <div id="intro-school${index}"></div>
+                
+                <div class="layout">
+                  <section class="panel calendar">
+                    <header class="panel-header blue-header">
+                      <h2 id="calendar-header-school${index}">Academic Calendar (2025–2026)</h2>
+                      <p class="muted inverted">June 2025 → May 2026</p>
+                    </header>
+                    <div id="calendarGrid-school${index}" class="calendar-grid"></div>
+                  </section>
+                  
+                  <div class="side-column">
+                    <section class="panel">
+                      <header class="panel-header blue-header">
+                        <h2>Calculations</h2>
+                      </header>
+                      <div class="panel-body" id="calculations-school${index}">
+                        <ul class="mini-calculations" id="calculationsList-school${index}"></ul>
+                      </div>
+                    </section>
+                    
+                    <section class="panel">
+                      <header class="panel-header blue-header">
+                        <h2>Events</h2>
+                      </header>
+                      <div class="panel-body" id="events-school${index}">
+                        <ul class="mini-events" id="eventsList-school${index}"></ul>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+                
+                <div class="accordion">
+                  <section class="panel">
+                    <header class="panel-header blue-header">
+                      <h2>More info</h2>
+                    </header>
+                  </section>
+                </div>
+              </details>
+            </td>
+          </tr>
+          <tr>
+            <td class="content center" colspan="2" id="extra-slot-school${index}"></td>
+          </tr>
+        `;
+      }
       
+      // Function to load events for a school
+      function loadSchoolEvents(eventListId, schoolKey, data) {
+        const listEl = document.getElementById(eventListId);
+        
+        if (listEl && data["2026"] && data["2026"][schoolKey]) {
+          data["2026"][schoolKey].forEach(post => {
+            const termClass = post.TERM_DESC.toLowerCase();
+            listEl.insertAdjacentHTML('beforeend', `
+              <li class="eventone ${termClass}">
+                <strong>${post.EVENT_DESCRIPTION}</strong>
+                <small>Code: ${post.EVENT_CODE} | Start: ${post.START} | End: ${post.END || 'TBD'}</small>
+              </li>
+            `);
+          });
+        }
+      }
+      
+      // Fetch JSON and build everything dynamically
       fetch('./AcademicCalendar.json')
-        // Waits for the file load and then converts it into Json data that we can use 
         .then(response => response.json())
-        // This represents our entire data object
         .then(data => {
           console.log("Full data:", data);
-          console.log("Available keys:", Object.keys(data));
-          console.log("School 1 data:", data["2026||3R|3R|3R"]);
-          console.log("School 1 2026:", data["2026||3R|3R|3R"]["2026"]);
-          data["2026||3R|3R|3R"]["2026"].forEach(post => {
-            const termClass = post.TERM_DESC.toLowerCase();
-            listElSchool1.insertAdjacentHTML('beforeend', `
-              <li class="eventone ${termClass}">
-                <strong>${post.EVENT_DESCRIPTION}</strong>
-                <small>Code: ${post.EVENT_CODE} | Start: ${post.START} | End: ${post.END || 'TBD'}</small>
-              </li>
-            `);
+          
+          const schoolsContainer = document.getElementById('schools-container');
+          const schoolKeys = Object.keys(data["2026"]);
+          
+          console.log("Found schools:", schoolKeys);
+          
+          // Create HTML for each school
+          schoolKeys.forEach((schoolKey, index) => {
+            // Add 1 to index so IDs start at school1, school2, etc.
+            const schoolIndex = index + 1;
+            
+            // Insert school HTML
+            schoolsContainer.insertAdjacentHTML('beforeend', createSchoolHTML(schoolKey, schoolIndex));
+            
+            // Load events for this school
+            loadSchoolEvents(`eventsList-school${schoolIndex}`, schoolKey, data);
           });
-        });
-      
-      // School Two 
-      const listElSchool2 = document.querySelectorAll('#eventsList-school2')[0];
-      fetch('./AcademicCalendar.json')
-        .then(response => response.json())
-        .then(data => {
-          data["2026||1G-1H-2X|2X|2X"]["2026"].forEach(post => {
-            const termClass = post.TERM_DESC.toLowerCase();
-            listElSchool2.insertAdjacentHTML('beforeend', `
-              <li class="eventone ${termClass}">
-                <strong>${post.EVENT_DESCRIPTION}</strong>
-                <small>Code: ${post.EVENT_CODE} | Start: ${post.START} | End: ${post.END || 'TBD'}</small>
-              </li>
-            `);
+          
+          // Build calendars for each school (after HTML is inserted)
+          schoolKeys.forEach((schoolKey, index) => {
+            const schoolIndex = index + 1;
+            buildSchoolCalendar(
+              `calendarGrid-school${schoolIndex}`, 
+              `calculationsList-school${schoolIndex}`, 
+              schoolKey
+            );
           });
-        });
+        })
+        .catch(err => console.error('Error loading data:', err));
     </script>
+    
+    <!-- Calendar building script -->
     <script src="app.js"></script>
   </body>
 </html>

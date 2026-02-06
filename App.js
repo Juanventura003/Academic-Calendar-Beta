@@ -51,7 +51,7 @@ if (calendarContainer) {
       console.log("JSON data loaded:", calendarData);
       
       // Navigate through the JSON structure to get all events
-      const allEvents = calendarData[schoolKey]["2026"];
+      const allEvents = calendarData["2026"][schoolKey];
       console.log("Events:", allEvents);
       
       // Filter to get only term events (EVENT_CODE === "TRM")
@@ -311,6 +311,3 @@ if (calendarContainer) {
     
   }
 }
-// Build calendars for each school
-buildSchoolCalendar("calendarGrid-school1", "calculationsList-school1", "2026||3R|3R|3R");
-buildSchoolCalendar("calendarGrid-school2", "calculationsList-school2", "2026||1G-1H-2X|2X|2X");
