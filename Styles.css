@@ -4,6 +4,8 @@ body {
     background-color: #d6d6d6;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    width: 100%;
     }
   
     .preheader {
@@ -23,6 +25,7 @@ body {
       margin: 0;
       padding: 0;
       border-collapse: collapse;
+      word-wrap: break-word;
     }
     /* Header */
     .header td {
@@ -31,8 +34,9 @@ body {
     vertical-align: middle;
     }
     /*Deals with the logo*/
-    .logo { width: 33%; }
-    .heading { width: 66%; color: #ffffff; }
+    .logo { width: auto; }
+    .logo img { max-width: 100%; height: auto; }
+    .heading { color: #ffffff; }
     .heading h1 {
     margin: 0 0 6px 0;
     font-size: 24px; /* similar to size='+2' */
@@ -133,7 +137,7 @@ body {
     grid-template-rows: repeat(7, 1fr); /* 1 label row + 6 day rows max */
     gap: .5px;
     column-gap: 10px;
-    font-size: clamp(15px, 0.8vw, 11px); /* Responsive font size */
+    font-size: clamp(11px, 0.8vw, 15px); /* Responsive font size */
     flex: 1; /* Takes remaining space */
     min-height: 0; /* Allows shrinking */
     }
@@ -154,7 +158,7 @@ body {
     /* Day-of-week labels row */
     .day.label {
     font-weight: bold;
-    font-size: clamp(16px, 0.7vw, 9px); /* Responsive label font */
+    font-size: clamp(9px, 0.7vw, 16px); /* Responsive label font */
     color: black;
     border-color: white;
     }
@@ -182,10 +186,10 @@ body {
     padding: 8px;
     margin-bottom: 7px;
     list-style: none;
-    height: 50px
+    min-height: 50px
   }
-  
-  
+
+
     ul.mini-events {
       padding: 0;
       margin: 0;
@@ -203,10 +207,10 @@ body {
     padding: 8px;
     margin-bottom: 7px;
     list-style: none;
-    height: 50px
+    min-height: 50px
     }
-  
-    
+
+
     .calculation-item.spring {
       background-color: #004B8D !important;
       color: white !important;
@@ -233,11 +237,59 @@ body {
     }
     }
     
+    /* *** Added: expanded mobile breakpoint for full device support */
     @media (max-width: 768px) {
     .calendar-grid {
     grid-template-columns: 1fr; /* Single column on mobile */
-    grid-template-rows: repeat(12, 1fr); /* 12 rows for 12 months */
+    grid-template-rows: auto; /* Let months size naturally */
     gap: 6px;
+    }
+
+    /* *** Added: force table to behave as block layout on mobile */
+    .wrapper,
+    .wrapper tbody,
+    .wrapper tr,
+    .wrapper td {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    }
+    .layout {
+    width: 100% !important;
+    box-sizing: border-box;
+    overflow: hidden;
+    }
+    .header td {
+    text-align: center;
+    }
+    .logo img {
+    max-width: 200px;
+    height: auto;
+    }
+
+    /* *** Added: reduce content padding on mobile */
+    .content {
+    padding: 10px;
+    }
+
+    /* *** Added: wrap legend items vertically on mobile */
+    .legend {
+    margin-left: 0;
+    }
+    .legend-term > span {
+    display: block;
+    margin-left: 0;
+    }
+
+    /* *** Added: let month cards auto-size instead of forced square on mobile */
+    .month {
+    aspect-ratio: auto;
+    }
+
+    /* *** Added: scale summary text for mobile */
+    summary {
+    font-size: 14px;
+    padding: 8px;
     }
     }
     
@@ -260,12 +312,12 @@ body {
   .legend{
     margin-left:50px;
   }
-  .legend-term p{
+  .legend-term > span{
     display: inline-block;
     margin-left: 30px;
     margin-top:5px;
     margin-bottom:20px;
-    
+
   }
   
   .spring-term-legend{
@@ -311,7 +363,7 @@ body {
       padding: 8px;
       margin-bottom: 7px;
       list-style: none;
-      height: 50px;
+      min-height: 50px;
       background-color: red !important;
       color: white;
       }
@@ -328,4 +380,82 @@ body {
     
     summary:hover {
       background-color: #002580;
+    }
+
+    /* ===== Print styles ===== */
+    @media print {
+      /* Force browsers to print background colors */
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+
+      body {
+        background: white;
+        overflow: visible;
+        width: 100%;
+      }
+
+      /* Remove gray background, use full width */
+      .wrapper,
+      .wrapper tbody,
+      .wrapper tr,
+      .wrapper td {
+        display: block !important;
+        width: 100% !important;
+        background: white;
+      }
+
+      /* Keep header styling but make it print-friendly */
+      .header td {
+        text-align: center;
+      }
+
+      /* Force all <details> open so all schools print */
+      details {
+        display: block !important;
+      }
+      details > summary {
+        list-style: none;
+        cursor: default;
+      }
+      details > summary::-webkit-details-marker {
+        display: none;
+      }
+
+      /* Stack layout for paper */
+      .layout {
+        display: block !important;
+      }
+      .side-column {
+        display: block !important;
+      }
+      .panel {
+        break-inside: avoid;
+        margin-bottom: 16px;
+      }
+
+      /* Calendar grid: 2 columns still works on paper */
+      .calendar-grid {
+        break-inside: avoid;
+      }
+      .month {
+        break-inside: avoid;
+        aspect-ratio: auto;
+      }
+
+      /* Each school on its own page */
+      .content {
+        break-before: page;
+      }
+
+      /* Hide footer spacer */
+      .footer-spacer {
+        display: none;
+      }
+
+      /* Remove border-radius for cleaner print */
+      .panel, summary {
+        border-radius: 0;
+      }
     }

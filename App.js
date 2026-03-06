@@ -6,6 +6,8 @@ const pageHeaderData = {
 
 document.getElementById("title").textContent = pageHeaderData.title || "";
 document.getElementById("subtitle").textContent = pageHeaderData.subtitle || "";
+// *** Added: confirm page header was set
+console.log("Page header set:", pageHeaderData.title, "|", pageHeaderData.subtitle);
 
 // Function checks if a specific date falls within a term's start and end dates
 function checkIfDateInTerm(date, termData) {
@@ -26,37 +28,37 @@ function checkIfDateInTerm(date, termData) {
 
 // ===== MAIN CALENDAR BUILDING SECTION =====
 
-function buildSchoolCalendar(calendarId, calculationsListId, schoolKey) {
+function buildSchoolCalendar(calendarId, calculationsListId, schoolKey, calendarData) {
+// *** Added: log function entry with school key and target element IDs
+console.log(`\n--- buildSchoolCalendar called for "${schoolKey}" ---`);
+console.log(`  Calendar container ID: #${calendarId}`);
+console.log(`  Calculations list ID: #${calculationsListId}`);
 
 // Get the container elements from HTML
 const calendarContainer = document.getElementById(calendarId);
 const calculationsList = document.getElementById(calculationsListId);
-console.log("Calendar grid element:", calendarContainer); // Debug check
+// *** Added: verify DOM elements were found
+console.log("  Calendar grid element:", calendarContainer ? "found" : "NOT FOUND");
+console.log("  Calculations list element:", calculationsList ? "found" : "NOT FOUND");
 
 if (calendarContainer) {
-  
+
   // Weekday abbreviations for calendar header
   const daysOfWeek = ["U", "M", "T", "W", "R", "F", "S"];
-  
-  console.log("Starting to fetch calendar.json...");
-  
-  // ===== FETCH SEMESTER DATA FROM JSON FILE =====
-  
-  fetch('./AcademicCalendar.json')
-    .then(response => {
-      console.log("Fetch response:", response);
-      return response.json();
-    })
-    .then(calendarData => {
-      console.log("JSON data loaded:", calendarData);
-      
+
+  {
       // Navigate through the JSON structure to get all events
       const allEvents = calendarData["2026"][schoolKey];
       console.log("Events:", allEvents);
       
+      // *** Added: log total event count for this school
+      console.log(`  Total events for "${schoolKey}":`, allEvents.length);
+
       // Filter to get only term events (EVENT_CODE === "TRM")
       const academicTerms = allEvents.filter(event => event.EVENT_CODE === "TRM");
-      console.log("Term events found:", academicTerms);
+      // *** Added: log filtered term events with date ranges
+      console.log(`  Term (TRM) events found: ${academicTerms.length}`);
+      academicTerms.forEach(t => console.log(`    - ${t.TERM_DESC}: ${t.START} to ${t.END}`));
 
       // ===== CALCULATE TERM DURATIONS =====
       const termDurationData = [];
@@ -87,6 +89,10 @@ if (calendarContainer) {
           });
         }
       });
+
+      // *** Added: log calculated term durations
+      console.log("  Term durations calculated:");
+      termDurationData.forEach(d => console.log(`    - ${d.term}: ${d.days} days (${d.weeks}w ${d.remainingDays}d)`));
 
       // Display term calculations in the UI
       termDurationData.forEach(termData => {
@@ -131,6 +137,10 @@ if (calendarContainer) {
         });
       });
 
+      // *** Added: log detected term overlaps
+      console.log(`  Overlaps detected: ${termOverlaps.length}`);
+      termOverlaps.forEach(o => console.log(`    - ${o.overlapStart.toLocaleDateString()} to ${o.overlapEnd.toLocaleDateString()}`));
+
       // Display overlaps in the UI
       termOverlaps.forEach(overlapPeriod => {
         calculationsList.insertAdjacentHTML('beforeend', `
@@ -165,13 +175,17 @@ if (calendarContainer) {
       }
 
       const [calendarStartDate, calendarEndDate] = getStartAndEndDates(academicTerms);
-      
+      // *** Added: log calendar date range from earliest to latest term
+      console.log(`  Calendar date range: ${calendarStartDate.toLocaleDateString()} to ${calendarEndDate.toLocaleDateString()}`);
+
       // Calculate how many months to display
       const calendarStartYear = calendarStartDate.getFullYear();
       const calendarStartMonth = calendarStartDate.getMonth();
       const calendarEndYear = calendarEndDate.getFullYear();
       const calendarEndMonth = calendarEndDate.getMonth();
       const monthsInCalendar = (calendarEndYear - calendarStartYear) * 12 + (calendarEndMonth - calendarStartMonth) + 1;
+      // *** Added: log total months that will be rendered
+      console.log(`  Months to render: ${monthsInCalendar}`);
       
       // ===== BUILD MONTHS OF CALENDAR =====
       for (let monthIndex = 0; monthIndex < monthsInCalendar; monthIndex++) {
@@ -254,60 +268,5 @@ if (calendarContainer) {
         monthContainer.appendChild(daysGrid);
         calendarContainer.appendChild(monthContainer);
       }
-    })
-    .catch(error => {
-      // ===== ERROR HANDLING =====
-      console.error('Error loading calendar data:', error);
-      console.log("Building fallback calendar without highlighting...");
-
-
-      
-      // ===== FALLBACK CALENDAR (NO HIGHLIGHTING) =====
-      const fallbackStartDate = new Date(2025, 5, 1);
-      
-      for (let monthIndex = 0; monthIndex < 12; monthIndex++) {
-        const currentMonthDate = new Date(fallbackStartDate.getFullYear(), fallbackStartDate.getMonth() + monthIndex, 1);
-        const currentMonthName = currentMonthDate.toLocaleString("en-US", { month: "long" });
-        const currentYear = currentMonthDate.getFullYear();
-        
-        const monthContainer = document.createElement("div");
-        monthContainer.className = "month";
-        
-        const monthHeader = document.createElement("h3");
-        monthHeader.textContent = `${currentMonthName} ${currentYear}`;
-        monthContainer.appendChild(monthHeader);
-        
-        const daysGrid = document.createElement("div");
-        daysGrid.className = "days";
-        
-        daysOfWeek.forEach(dayLabel => {
-          const dayHeaderCell = document.createElement("div");
-          dayHeaderCell.className = "day label";
-          dayHeaderCell.textContent = dayLabel;
-          daysGrid.appendChild(dayHeaderCell);
-        });
-        
-        const firstDayOfWeek = new Date(currentYear, currentMonthDate.getMonth(), 1).getDay();
-        const totalDaysInMonth = new Date(currentYear, currentMonthDate.getMonth() + 1, 0).getDate();
-        
-        for (let emptyIndex = 0; emptyIndex < firstDayOfWeek; emptyIndex++) {
-          const blankCell = document.createElement("div");
-          blankCell.className = "day";
-          daysGrid.appendChild(blankCell);
-        }
-        
-        for (let dayNumber = 1; dayNumber <= totalDaysInMonth; dayNumber++) {
-          const dayCell = document.createElement("div");
-          dayCell.className = "day";
-          dayCell.textContent = dayNumber;
-          daysGrid.appendChild(dayCell);
-        }
-        
-        monthContainer.appendChild(daysGrid);
-        calendarContainer.appendChild(monthContainer);
-      }
-    });
-
-    
   }
 }
