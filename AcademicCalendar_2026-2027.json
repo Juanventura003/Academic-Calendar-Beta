@@ -1,0 +1,98 @@
+{
+    "2026": {
+        "TEST-A|TEST-A|TEST-A": [
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "TEST-A",
+                "ROLLUP_FRIENDLY_NAME": "TEST School - Summer 2026",
+                "START": "6/15/2026",
+                "END": "8/14/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "TEST-A",
+                "ROLLUP_FRIENDLY_NAME": "TEST School - Fall 2026",
+                "START": "9/1/2026",
+                "END": "1/22/2027",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "TEST-A",
+                "ROLLUP_FRIENDLY_NAME": "TEST School - Spring 2027",
+                "START": "1/31/2027",
+                "END": "6/9/2027",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "TEST-A",
+                "ROLLUP_FRIENDLY_NAME": "TEST School - Fall 2026",
+                "START": "3/20/2026",
+                "END": "3/20/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "TEST-A",
+                "ROLLUP_FRIENDLY_NAME": "TEST School - Fall 2026",
+                "START": "1/22/2027",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            }
+        ],
+        "TEST-B|TEST-B": [
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "TEST-B",
+                "ROLLUP_FRIENDLY_NAME": "Second Test School",
+                "START": "8/25/2026",
+                "END": "12/15/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "TEST-B",
+                "ROLLUP_FRIENDLY_NAME": "Second Test School",
+                "START": "1/15/2027",
+                "END": "5/20/2027",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "TEST-B",
+                "ROLLUP_FRIENDLY_NAME": "Second Test School",
+                "START": "11/1/2026",
+                "END": "11/1/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "TEST-B",
+                "ROLLUP_FRIENDLY_NAME": "Second Test School",
+                "START": "12/15/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            }
+        ]
+    }
+}

@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- *** Added: viewport meta tag for mobile scaling -->
+    <!-- Viewport meta tag for mobile scaling -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Academic calendar</title>
     <link rel="stylesheet" href="Styles.css" />
@@ -21,6 +21,14 @@
         <td class="heading">
           <h1 id="title"></h1>
           <div id="subtitle" class="subtitle"></div>
+          <div class="year-nav">
+            <label for="year-select">Academic Year:</label>
+            <select id="year-select">
+              <option value="2024-2025">2024–2025</option>
+              <option value="2025-2026">2025–2026</option>
+              <option value="2026-2027">2026–2027</option>
+            </select>
+          </div>
         </td>
       </tr>
       
@@ -35,20 +43,17 @@
 
     <!-- Dynamic school generation script -->
     <script>
-      console.log("Script is starting!");
-      
       // Function to create HTML for one school
-      // *** Added: verify schools-container exists on page load
-      console.log("schools-container element:", document.getElementById('schools-container'));
-
-      function createSchoolHTML(schoolKey, index) {
-        // *** Added: log each school HTML creation
-        console.log(`Creating HTML for school: "${schoolKey}" (index: ${index})`);
+      function createSchoolHTML(schoolKey, index, friendlyNames) {
+        const friendlyNamesHTML = friendlyNames.map(name => `<span class="school-friendly-name">${name}</span>`).join('');
         return `
           <tr>
             <td class="content" colspan="2">
               <details>
-                <summary id="summary-school${index}">${schoolKey}</summary>
+                <summary id="summary-school${index}">
+                  <span class="school-names">${friendlyNamesHTML}</span>
+                  <small class="school-pot-key">${schoolKey}</small>
+                </summary>
                 
                 <div class="legend">
                   <div class="legend-term">
@@ -108,16 +113,11 @@
       }
       
       // Function to load events for a school
-      function loadSchoolEvents(eventListId, schoolKey, data) {
+      function loadSchoolEvents(eventListId, schoolKey, data, yearKey) {
         const listEl = document.getElementById(eventListId);
-        // *** Added: log event loading per school and element lookup
-        console.log(`Loading events for "${schoolKey}" into #${eventListId}`, listEl ? "- element found" : "- element NOT found");
 
-        if (listEl && data["2026"] && data["2026"][schoolKey]) {
-          const eventCount = data["2026"][schoolKey].length;
-          // *** Added: log event count per school
-          console.log(`  ${eventCount} events to load for "${schoolKey}"`);
-          data["2026"][schoolKey].forEach(post => {
+        if (listEl && data[yearKey] && data[yearKey][schoolKey]) {
+          data[yearKey][schoolKey].forEach(post => {
             const termClass = post.TERM_DESC.toLowerCase();
             listEl.insertAdjacentHTML('beforeend', `
               <li class="eventone ${termClass}">
@@ -128,53 +128,80 @@
           });
         }
       }
-      
-      // Fetch JSON and build everything dynamically
-      // *** Added: log fetch lifecycle
-      console.log("Fetching AcademicCalendar.json...");
-      fetch('./AcademicCalendar.json')
-        .then(response => {
-          // *** Added: log fetch response status
-          console.log("Fetch response status:", response.status, response.ok ? "OK" : "FAILED");
-          return response.json();
-        })
-        .then(data => {
-          console.log("Full data:", data);
-          
-          const schoolsContainer = document.getElementById('schools-container');
-          const schoolKeys = Object.keys(data["2026"]);
-          
-          // *** Added: log school count and names
-          console.log(`Found ${schoolKeys.length} schools:`, schoolKeys);
 
-          // Create HTML for each school
-          schoolKeys.forEach((schoolKey, index) => {
-            // Add 1 to index so IDs start at school1, school2, etc.
-            const schoolIndex = index + 1;
-            
-            // Insert school HTML
-            schoolsContainer.insertAdjacentHTML('beforeend', createSchoolHTML(schoolKey, schoolIndex));
-            
-            // Load events for this school
-            loadSchoolEvents(`eventsList-school${schoolIndex}`, schoolKey, data);
-          });
-          
-          // *** Added: log transition from HTML insertion to calendar building
-          console.log("All school HTML inserted. Now building calendars...");
-          // Build calendars for each school (after HTML is inserted)
-          schoolKeys.forEach((schoolKey, index) => {
-            const schoolIndex = index + 1;
-            buildSchoolCalendar(
-              `calendarGrid-school${schoolIndex}`,
-              `calculationsList-school${schoolIndex}`,
-              schoolKey,
-              data
-            );
-          });
-          // *** Added: log completion of all calendar builds
-          console.log("All calendars built successfully!");
-        })
-        .catch(err => console.error('Error loading data:', err));
+      // Load calendar data for a given academic year (e.g. "2025-2026")
+      function loadCalendar(year) {
+        fetch(`./AcademicCalendar_${year}.json`)
+          .then(response => response.json())
+          .then(data => {
+            const schoolsContainer = document.getElementById('schools-container');
+            // Clear any previously rendered schools before building new ones
+            schoolsContainer.innerHTML = '';
+
+            // Grab the year key from the JSON dynamically (e.g. "2025")
+            const yearKey = Object.keys(data)[0];
+            const schoolKeys = Object.keys(data[yearKey]);
+
+            // Update page subtitle to reflect the selected year
+            document.getElementById("subtitle").textContent = year.replace('-', '–');
+
+            // Create HTML for each school
+            schoolKeys.forEach((schoolKey, index) => {
+              const schoolIndex = index + 1;
+
+              const friendlyNames = [...new Set(
+                data[yearKey][schoolKey].map(event => event.ROLLUP_FRIENDLY_NAME).filter(Boolean)
+              )];
+
+              schoolsContainer.insertAdjacentHTML('beforeend', createSchoolHTML(schoolKey, schoolIndex, friendlyNames));
+              loadSchoolEvents(`eventsList-school${schoolIndex}`, schoolKey, data, yearKey);
+            });
+
+            // Build calendars for each school (after HTML is inserted)
+            schoolKeys.forEach((schoolKey, index) => {
+              const schoolIndex = index + 1;
+              buildSchoolCalendar(
+                `calendarGrid-school${schoolIndex}`,
+                `calculationsList-school${schoolIndex}`,
+                schoolKey,
+                data,
+                yearKey
+              );
+            });
+          })
+          .catch(err => console.error('Error loading data:', err));
+      }
+
+      // Default year if nothing is specified in the URL
+      const DEFAULT_YEAR = '2025-2026';
+
+      // Read the "year" parameter from the URL (e.g. ?year=2025-2026)
+      function getYearFromURL() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get('year') || DEFAULT_YEAR;
+      }
+
+      // Sync the dropdown and load the calendar for the given year
+      function applyYear(year) {
+        document.getElementById('year-select').value = year;
+        loadCalendar(year);
+      }
+
+      // Initial load — uses URL parameter if present, otherwise default
+      applyYear(getYearFromURL());
+
+      // When the user picks a different year, update URL and reload calendar
+      document.getElementById('year-select').addEventListener('change', (e) => {
+        const year = e.target.value;
+        // Update the URL without reloading the page
+        history.pushState({ year }, '', `?year=${year}`);
+        loadCalendar(year);
+      });
+
+      // Handle browser back/forward buttons
+      window.addEventListener('popstate', () => {
+        applyYear(getYearFromURL());
+      });
     </script>
     
     <!-- Calendar building script -->

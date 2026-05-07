@@ -42,6 +42,24 @@ body {
     font-size: 24px; /* similar to size='+2' */
     }
     .subtitle { color: #ffffff; font-size: 14px; }
+    .year-nav {
+      margin-top: 10px;
+      color: #ffffff;
+      font-size: 14px;
+    }
+    .year-nav label {
+      margin-right: 8px;
+    }
+    .year-nav select {
+      padding: 4px 8px;
+      border-radius: 4px;
+      border: 1px solid #ffffff;
+      background: #ffffff;
+      color: #0033a0;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+    }
     /* Content rows */
     .content { background-color: #ffffff; padding: 20px; }
     .center { text-align: center; }
@@ -237,7 +255,7 @@ body {
     }
     }
     
-    /* *** Added: expanded mobile breakpoint for full device support */
+    /*expanded mobile breakpoint for full device support */
     @media (max-width: 768px) {
     .calendar-grid {
     grid-template-columns: 1fr; /* Single column on mobile */
@@ -245,7 +263,7 @@ body {
     gap: 6px;
     }
 
-    /* *** Added: force table to behave as block layout on mobile */
+    /*force table to behave as block layout on mobile */
     .wrapper,
     .wrapper tbody,
     .wrapper tr,
@@ -267,12 +285,12 @@ body {
     height: auto;
     }
 
-    /* *** Added: reduce content padding on mobile */
+    /*reduce content padding on mobile */
     .content {
     padding: 10px;
     }
 
-    /* *** Added: wrap legend items vertically on mobile */
+    /*wrap legend items vertically on mobile */
     .legend {
     margin-left: 0;
     }
@@ -281,12 +299,12 @@ body {
     margin-left: 0;
     }
 
-    /* *** Added: let month cards auto-size instead of forced square on mobile */
+    /*let month cards auto-size instead of forced square on mobile */
     .month {
     aspect-ratio: auto;
     }
 
-    /* *** Added: scale summary text for mobile */
+    /*scale summary text for mobile */
     summary {
     font-size: 14px;
     padding: 8px;
@@ -380,6 +398,22 @@ body {
     
     summary:hover {
       background-color: #002580;
+    }
+
+    /*friendly name and pot key styling on accordion */
+    .school-names {
+      display: block;
+    }
+    .school-friendly-name {
+      display: block;
+      line-height: 1.4;
+    }
+    .school-pot-key {
+      display: block;
+      font-weight: normal;
+      font-size: 12px;
+      opacity: 0.7;
+      margin-top: 4px;
     }
 
     /* ===== Print styles ===== */

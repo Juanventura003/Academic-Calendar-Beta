@@ -1,13 +1,11 @@
 // ===== INITIAL SETUP: Page title and subtitle =====
 const pageHeaderData = {
   title: "Academic Calendar",
-  subtitle: "Juan Ventura school",
+  subtitle: "2025–2026",
 };
 
 document.getElementById("title").textContent = pageHeaderData.title || "";
 document.getElementById("subtitle").textContent = pageHeaderData.subtitle || "";
-// *** Added: confirm page header was set
-console.log("Page header set:", pageHeaderData.title, "|", pageHeaderData.subtitle);
 
 // Function checks if a specific date falls within a term's start and end dates
 function checkIfDateInTerm(date, termData) {
@@ -28,18 +26,10 @@ function checkIfDateInTerm(date, termData) {
 
 // ===== MAIN CALENDAR BUILDING SECTION =====
 
-function buildSchoolCalendar(calendarId, calculationsListId, schoolKey, calendarData) {
-// *** Added: log function entry with school key and target element IDs
-console.log(`\n--- buildSchoolCalendar called for "${schoolKey}" ---`);
-console.log(`  Calendar container ID: #${calendarId}`);
-console.log(`  Calculations list ID: #${calculationsListId}`);
-
+function buildSchoolCalendar(calendarId, calculationsListId, schoolKey, calendarData, yearKey) {
 // Get the container elements from HTML
 const calendarContainer = document.getElementById(calendarId);
 const calculationsList = document.getElementById(calculationsListId);
-// *** Added: verify DOM elements were found
-console.log("  Calendar grid element:", calendarContainer ? "found" : "NOT FOUND");
-console.log("  Calculations list element:", calculationsList ? "found" : "NOT FOUND");
 
 if (calendarContainer) {
 
@@ -48,17 +38,10 @@ if (calendarContainer) {
 
   {
       // Navigate through the JSON structure to get all events
-      const allEvents = calendarData["2026"][schoolKey];
-      console.log("Events:", allEvents);
-      
-      // *** Added: log total event count for this school
-      console.log(`  Total events for "${schoolKey}":`, allEvents.length);
+      const allEvents = calendarData[yearKey][schoolKey];
 
       // Filter to get only term events (EVENT_CODE === "TRM")
       const academicTerms = allEvents.filter(event => event.EVENT_CODE === "TRM");
-      // *** Added: log filtered term events with date ranges
-      console.log(`  Term (TRM) events found: ${academicTerms.length}`);
-      academicTerms.forEach(t => console.log(`    - ${t.TERM_DESC}: ${t.START} to ${t.END}`));
 
       // ===== CALCULATE TERM DURATIONS =====
       const termDurationData = [];
@@ -89,10 +72,6 @@ if (calendarContainer) {
           });
         }
       });
-
-      // *** Added: log calculated term durations
-      console.log("  Term durations calculated:");
-      termDurationData.forEach(d => console.log(`    - ${d.term}: ${d.days} days (${d.weeks}w ${d.remainingDays}d)`));
 
       // Display term calculations in the UI
       termDurationData.forEach(termData => {
@@ -137,10 +116,6 @@ if (calendarContainer) {
         });
       });
 
-      // *** Added: log detected term overlaps
-      console.log(`  Overlaps detected: ${termOverlaps.length}`);
-      termOverlaps.forEach(o => console.log(`    - ${o.overlapStart.toLocaleDateString()} to ${o.overlapEnd.toLocaleDateString()}`));
-
       // Display overlaps in the UI
       termOverlaps.forEach(overlapPeriod => {
         calculationsList.insertAdjacentHTML('beforeend', `
@@ -175,8 +150,6 @@ if (calendarContainer) {
       }
 
       const [calendarStartDate, calendarEndDate] = getStartAndEndDates(academicTerms);
-      // *** Added: log calendar date range from earliest to latest term
-      console.log(`  Calendar date range: ${calendarStartDate.toLocaleDateString()} to ${calendarEndDate.toLocaleDateString()}`);
 
       // Calculate how many months to display
       const calendarStartYear = calendarStartDate.getFullYear();
@@ -184,8 +157,6 @@ if (calendarContainer) {
       const calendarEndYear = calendarEndDate.getFullYear();
       const calendarEndMonth = calendarEndDate.getMonth();
       const monthsInCalendar = (calendarEndYear - calendarStartYear) * 12 + (calendarEndMonth - calendarStartMonth) + 1;
-      // *** Added: log total months that will be rendered
-      console.log(`  Months to render: ${monthsInCalendar}`);
       
       // ===== BUILD MONTHS OF CALENDAR =====
       for (let monthIndex = 0; monthIndex < monthsInCalendar; monthIndex++) {
@@ -195,8 +166,6 @@ if (calendarContainer) {
         // Get month name and year
         const currentMonthName = currentMonthDate.toLocaleString("en-US", { month: "long" });
         const currentYear = currentMonthDate.getFullYear();
-        
-        console.log(`Building ${currentMonthName} ${currentYear}...`);
         
         // ===== CREATE MONTH CONTAINER =====
         const monthContainer = document.createElement("div");
