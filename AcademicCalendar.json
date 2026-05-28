@@ -1,25 +1,657 @@
 {
-    "2026": {
-        "3R|3R|3R": [
+    "2025": {
+        "1G-1H-2X|2X|2X": [
             {
-                "TERM": 70,
-                "TERM_DESC": "Spring",
-                "START": "1/25/2027",
-                "END": "6/9/2027",
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "9/2/2025",
+                "END": "1/23/2026",
                 "EVENT_CODE": "TRM",
                 "EVENT_DESCRIPTION": "Term Duration"
             },
             {
                 "TERM": 10,
                 "TERM_DESC": "Summer",
-                "START": "6/22/2026",
-                "END": "8/11/2026",
+                "POT_KEY": "1G-1H-2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General (POT 1G) \u0026 General (POT 1H) \u0026 General (POT 2X)",
+                "START": "6/16/2025",
+                "END": "8/15/2025",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "2/1/2026",
+                "END": "6/10/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "11/10/2025",
+                "END": "11/10/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "1G-1H-2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General (POT 1G) \u0026 General (POT 1H) \u0026 General (POT 2X)",
+                "START": "3/24/2025",
+                "END": "3/24/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "3/24/2025",
+                "END": "3/24/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "1G-1H-2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General (POT 1G) \u0026 General (POT 1H) \u0026 General (POT 2X)",
+                "START": "7/9/2025",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "6/10/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "1/23/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            }
+        ],
+        "3W|3W|3W": [
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
+                "START": "1/2/2026",
+                "END": "5/29/2026",
                 "EVENT_CODE": "TRM",
                 "EVENT_DESCRIPTION": "Term Duration"
             },
             {
                 "TERM": 30,
                 "TERM_DESC": "Fall",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
+                "START": "9/2/2025",
+                "END": "12/31/2025",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
+                "START": "6/1/2025",
+                "END": "8/31/2025",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
+                "START": "9/8/2025",
+                "END": "9/8/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
+                "START": "3/24/2025",
+                "END": "3/24/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
+                "START": "3/24/2025",
+                "END": "3/24/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
+                "START": "12/31/2025",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
+                "START": "5/29/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
+                "START": "8/31/2025",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            }
+        ],
+        "3R|3R|3R": [
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "9/2/2025",
+                "END": "1/23/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "2/1/2026",
+                "END": "6/10/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "6/16/2025",
+                "END": "8/15/2025",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "3/24/2025",
+                "END": "3/24/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "3/24/2025",
+                "END": "3/24/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "11/10/2025",
+                "END": "11/10/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "8/15/2025",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "6/10/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "1/23/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            }
+        ],
+        "3S|3S|3S": [
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "2/1/2026",
+                "END": "6/10/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "6/16/2025",
+                "END": "8/15/2025",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "9/2/2025",
+                "END": "1/23/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "11/10/2025",
+                "END": "11/10/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "3/24/2025",
+                "END": "3/24/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "3/24/2025",
+                "END": "3/24/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "6/10/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "8/15/2025",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "1/23/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            }
+        ],
+        "3X|3X|3X": [
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link Late",
+                "START": "2/17/2026",
+                "END": "6/23/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - NYSCAS - ASA College",
+                "START": "6/30/2025",
+                "END": "8/19/2025",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link Late",
+                "START": "9/16/2025",
+                "END": "2/4/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link Late",
+                "START": "3/24/2025",
+                "END": "3/24/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link Late",
+                "START": "11/10/2025",
+                "END": "11/10/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - NYSCAS - ASA College",
+                "START": "3/24/2025",
+                "END": "3/24/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link Late",
+                "START": "2/4/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link Late",
+                "START": "6/23/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - NYSCAS - ASA College",
+                "START": "8/19/2025",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            }
+        ],
+        "3U|3U|3U": [
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "9/2/2025",
+                "END": "12/23/2025",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "1/27/2026",
+                "END": "5/20/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "6/4/2025",
+                "END": "7/24/2025",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "3/25/2025",
+                "END": "3/25/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "3/11/2025",
+                "END": "3/11/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "10/20/2025",
+                "END": "10/20/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "12/23/2025",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "7/24/2025",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "5/20/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            }
+        ],
+        "3X|2X|2X": [
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - NYSCAS - ASA College",
+                "START": "6/30/2025",
+                "END": "8/19/2025",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "2/1/2026",
+                "END": "6/10/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "9/2/2025",
+                "END": "1/23/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - NYSCAS - ASA College",
+                "START": "3/24/2025",
+                "END": "3/24/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "11/10/2025",
+                "END": "11/10/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "3/24/2025",
+                "END": "3/24/2025",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - NYSCAS - ASA College",
+                "START": "8/19/2025",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "6/10/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "1/23/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            }
+        ]
+    },
+    "2026": {
+        "1G-1H-2X|2X|2X": [
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
                 "START": "8/30/2026",
                 "END": "1/10/2027",
                 "EVENT_CODE": "TRM",
@@ -28,88 +660,28 @@
             {
                 "TERM": 10,
                 "TERM_DESC": "Summer",
-                "START": "3/23/2026",
-                "END": "3/23/2026",
-                "EVENT_CODE": "REG",
-                "EVENT_DESCRIPTION": "Registration Open"
-            },
-            {
-                "TERM": 70,
-                "TERM_DESC": "Spring",
-                "START": "11/9/2026",
-                "END": "11/9/2026",
-                "EVENT_CODE": "REG",
-                "EVENT_DESCRIPTION": "Registration Open"
-            },
-            {
-                "TERM": 30,
-                "TERM_DESC": "Fall",
-                "START": "3/23/2026",
-                "END": "3/23/2026",
-                "EVENT_CODE": "REG",
-                "EVENT_DESCRIPTION": "Registration Open"
-            },
-            {
-                "TERM": 70,
-                "TERM_DESC": "Spring",
-                "START": "6/9/2027",
-                "END": null,
-                "EVENT_CODE": "WID",
-                "EVENT_DESCRIPTION": "Last Day to Withdraw"
-            },
-            {
-                "TERM": 10,
-                "TERM_DESC": "Summer",
-                "START": "8/11/2026",
-                "END": null,
-                "EVENT_CODE": "WID",
-                "EVENT_DESCRIPTION": "Last Day to Withdraw"
-            },
-            {
-                "TERM": 30,
-                "TERM_DESC": "Fall",
-                "START": "1/10/2027",
-                "END": null,
-                "EVENT_CODE": "WID",
-                "EVENT_DESCRIPTION": "Last Day to Withdraw"
-            }
-        ],
-        "1G-1H-2X|2X|2X": [
-            {
-                "TERM": 70,
-                "TERM_DESC": "Spring",
-                "START": "1/25/2027",
-                "END": "6/9/2027",
-                "EVENT_CODE": "TRM",
-                "EVENT_DESCRIPTION": "Term Duration"
-            },
-            {
-                "TERM": 10,
-                "TERM_DESC": "Summer",
+                "POT_KEY": "1G-1H-2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General (POT 1G) \u0026 General (POT 1H) \u0026 General (POT 2X)",
                 "START": "6/22/2026",
                 "END": "8/19/2026",
                 "EVENT_CODE": "TRM",
                 "EVENT_DESCRIPTION": "Term Duration"
             },
             {
-                "TERM": 30,
-                "TERM_DESC": "Fall",
-                "START": "8/30/2026",
-                "END": "1/10/2027",
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "1/25/2027",
+                "END": "6/9/2027",
                 "EVENT_CODE": "TRM",
                 "EVENT_DESCRIPTION": "Term Duration"
             },
             {
-                "TERM": 30,
-                "TERM_DESC": "Fall",
-                "START": "3/23/2026",
-                "END": "3/23/2026",
-                "EVENT_CODE": "REG",
-                "EVENT_DESCRIPTION": "Registration Open"
-            },
-            {
                 "TERM": 70,
                 "TERM_DESC": "Spring",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
                 "START": "11/9/2026",
                 "END": "11/9/2026",
                 "EVENT_CODE": "REG",
@@ -118,6 +690,8 @@
             {
                 "TERM": 10,
                 "TERM_DESC": "Summer",
+                "POT_KEY": "1G-1H-2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General (POT 1G) \u0026 General (POT 1H) \u0026 General (POT 2X)",
                 "START": "3/23/2026",
                 "END": "3/23/2026",
                 "EVENT_CODE": "REG",
@@ -126,14 +700,18 @@
             {
                 "TERM": 30,
                 "TERM_DESC": "Fall",
-                "START": "1/10/2027",
-                "END": null,
-                "EVENT_CODE": "WID",
-                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "3/23/2026",
+                "END": "3/23/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
             },
             {
                 "TERM": 10,
                 "TERM_DESC": "Summer",
+                "POT_KEY": "1G-1H-2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General (POT 1G) \u0026 General (POT 1H) \u0026 General (POT 2X)",
                 "START": "7/15/2026",
                 "END": null,
                 "EVENT_CODE": "WID",
@@ -142,7 +720,19 @@
             {
                 "TERM": 70,
                 "TERM_DESC": "Spring",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
                 "START": "6/9/2027",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "1/10/2027",
                 "END": null,
                 "EVENT_CODE": "WID",
                 "EVENT_DESCRIPTION": "Last Day to Withdraw"
@@ -150,8 +740,20 @@
         ],
         "3W|3W|3W": [
             {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
+                "START": "1/1/2027",
+                "END": "5/31/2027",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
                 "TERM": 30,
                 "TERM_DESC": "Fall",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
                 "START": "9/1/2026",
                 "END": "12/31/2026",
                 "EVENT_CODE": "TRM",
@@ -160,6 +762,8 @@
             {
                 "TERM": 10,
                 "TERM_DESC": "Summer",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
                 "START": "6/1/2026",
                 "END": "8/31/2026",
                 "EVENT_CODE": "TRM",
@@ -168,46 +772,38 @@
             {
                 "TERM": 70,
                 "TERM_DESC": "Spring",
-                "START": "1/1/2027",
-                "END": "5/31/2027",
-                "EVENT_CODE": "TRM",
-                "EVENT_DESCRIPTION": "Term Duration"
-            },
-            {
-                "TERM": 10,
-                "TERM_DESC": "Summer",
-                "START": "3/23/2026",
-                "END": "3/23/2026",
-                "EVENT_CODE": "REG",
-                "EVENT_DESCRIPTION": "Registration Open"
-            },
-            {
-                "TERM": 70,
-                "TERM_DESC": "Spring",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
                 "START": "11/9/2026",
                 "END": "11/9/2026",
                 "EVENT_CODE": "REG",
                 "EVENT_DESCRIPTION": "Registration Open"
             },
             {
-                "TERM": 30,
-                "TERM_DESC": "Fall",
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
                 "START": "3/23/2026",
                 "END": "3/23/2026",
                 "EVENT_CODE": "REG",
                 "EVENT_DESCRIPTION": "Registration Open"
             },
             {
-                "TERM": 10,
-                "TERM_DESC": "Summer",
-                "START": "8/31/2026",
-                "END": null,
-                "EVENT_CODE": "WID",
-                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
+                "START": "3/23/2026",
+                "END": "3/23/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
             },
             {
                 "TERM": 30,
                 "TERM_DESC": "Fall",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
                 "START": "12/31/2026",
                 "END": null,
                 "EVENT_CODE": "WID",
@@ -216,7 +812,387 @@
             {
                 "TERM": 70,
                 "TERM_DESC": "Spring",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
                 "START": "5/31/2027",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3W",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - CEC in Advanced Imaging",
+                "START": "8/31/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            }
+        ],
+        "3R|3R|3R": [
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "8/30/2026",
+                "END": "1/10/2027",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "1/25/2027",
+                "END": "6/9/2027",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "6/22/2026",
+                "END": "8/11/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "3/23/2026",
+                "END": "3/23/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "3/23/2026",
+                "END": "3/23/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "11/9/2026",
+                "END": "11/9/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "8/11/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "6/9/2027",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3R",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - Freshman Center",
+                "START": "1/10/2027",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            }
+        ],
+        "3S|3S|3S": [
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "1/25/2027",
+                "END": "6/9/2027",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "6/22/2026",
+                "END": "8/11/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "8/30/2026",
+                "END": "1/10/2027",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "11/9/2026",
+                "END": "11/9/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "3/23/2026",
+                "END": "3/23/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "3/23/2026",
+                "END": "3/23/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "6/9/2027",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "8/11/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3S",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link - Non Matric",
+                "START": "1/10/2027",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            }
+        ],
+        "3X|3X|3X": [
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link Late",
+                "START": "2/17/2027",
+                "END": "6/23/2027",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - NYSCAS - ASA College",
+                "START": "6/30/2026",
+                "END": "8/19/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link Late",
+                "START": "9/16/2026",
+                "END": "2/4/2027",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link Late",
+                "START": "3/23/2026",
+                "END": "3/23/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link Late",
+                "START": "11/10/2026",
+                "END": "11/10/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - NYSCAS - ASA College",
+                "START": "3/23/2026",
+                "END": "3/23/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link Late",
+                "START": "2/4/2027",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - New York Link Late",
+                "START": "6/23/2027",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - NYSCAS - ASA College",
+                "START": "8/19/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            }
+        ],
+        "3U|3U|3U": [
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "9/2/2026",
+                "END": "12/23/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "1/27/2027",
+                "END": "5/20/2027",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "6/4/2026",
+                "END": "7/24/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "3/25/2026",
+                "END": "3/25/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "3/11/2026",
+                "END": "3/11/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "10/20/2026",
+                "END": "10/20/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "12/23/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "7/24/2026",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "5/20/2027",
                 "END": null,
                 "EVENT_CODE": "WID",
                 "EVENT_DESCRIPTION": "Last Day to Withdraw"
@@ -224,8 +1200,20 @@
         ],
         "3U-3V|3U|3U": [
             {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "8/30/2026",
+                "END": "12/23/2026",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
                 "TERM": 70,
                 "TERM_DESC": "Spring",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
                 "START": "1/25/2027",
                 "END": "5/20/2027",
                 "EVENT_CODE": "TRM",
@@ -234,38 +1222,18 @@
             {
                 "TERM": 10,
                 "TERM_DESC": "Summer",
+                "POT_KEY": "3U-3V",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW) (POT 3U) \u0026 MSW in Social Work (MSW) (POT 3V)",
                 "START": "6/1/2026",
                 "END": "8/21/2026",
                 "EVENT_CODE": "TRM",
                 "EVENT_DESCRIPTION": "Term Duration"
             },
             {
-                "TERM": 30,
-                "TERM_DESC": "Fall",
-                "START": "8/30/2026",
-                "END": "12/23/2026",
-                "EVENT_CODE": "TRM",
-                "EVENT_DESCRIPTION": "Term Duration"
-            },
-            {
-                "TERM": 30,
-                "TERM_DESC": "Fall",
-                "START": "3/24/2026",
-                "END": "3/24/2026",
-                "EVENT_CODE": "REG",
-                "EVENT_DESCRIPTION": "Registration Open"
-            },
-            {
-                "TERM": 10,
-                "TERM_DESC": "Summer",
-                "START": "3/10/2026",
-                "END": "3/10/2026",
-                "EVENT_CODE": "REG",
-                "EVENT_DESCRIPTION": "Registration Open"
-            },
-            {
                 "TERM": 70,
                 "TERM_DESC": "Spring",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
                 "START": "11/3/2026",
                 "END": "11/3/2026",
                 "EVENT_CODE": "REG",
@@ -274,14 +1242,28 @@
             {
                 "TERM": 10,
                 "TERM_DESC": "Summer",
-                "START": "7/21/2026",
-                "END": null,
-                "EVENT_CODE": "WID",
-                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+                "POT_KEY": "3U-3V",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW) (POT 3U) \u0026 MSW in Social Work (MSW) (POT 3V)",
+                "START": "3/10/2026",
+                "END": "3/10/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
             },
             {
                 "TERM": 30,
                 "TERM_DESC": "Fall",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
+                "START": "3/24/2026",
+                "END": "3/24/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
                 "START": "12/23/2026",
                 "END": null,
                 "EVENT_CODE": "WID",
@@ -290,7 +1272,19 @@
             {
                 "TERM": 70,
                 "TERM_DESC": "Spring",
+                "POT_KEY": "3U",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW)",
                 "START": "5/20/2027",
+                "END": null,
+                "EVENT_CODE": "WID",
+                "EVENT_DESCRIPTION": "Last Day to Withdraw"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3U-3V",
+                "ROLLUP_FRIENDLY_NAME": "Grad School of Soc Work (NY) - MSW in Social Work (MSW) (POT 3U) \u0026 MSW in Social Work (MSW) (POT 3V)",
+                "START": "7/21/2026",
                 "END": null,
                 "EVENT_CODE": "WID",
                 "EVENT_DESCRIPTION": "Last Day to Withdraw"
@@ -300,6 +1294,8 @@
             {
                 "TERM": 30,
                 "TERM_DESC": "Fall",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
                 "START": "8/30/2026",
                 "END": "1/10/2027",
                 "EVENT_CODE": "TRM",
@@ -308,14 +1304,28 @@
             {
                 "TERM": 70,
                 "TERM_DESC": "Spring",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
                 "START": "1/25/2027",
                 "END": "6/9/2027",
                 "EVENT_CODE": "TRM",
                 "EVENT_DESCRIPTION": "Term Duration"
             },
             {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "3/23/2026",
+                "END": "3/23/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
                 "TERM": 70,
                 "TERM_DESC": "Spring",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
                 "START": "11/9/2026",
                 "END": "11/9/2026",
                 "EVENT_CODE": "REG",
@@ -324,14 +1334,8 @@
             {
                 "TERM": 30,
                 "TERM_DESC": "Fall",
-                "START": "3/23/2026",
-                "END": "3/23/2026",
-                "EVENT_CODE": "REG",
-                "EVENT_DESCRIPTION": "Registration Open"
-            },
-            {
-                "TERM": 30,
-                "TERM_DESC": "Fall",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
                 "START": "1/10/2027",
                 "END": null,
                 "EVENT_CODE": "WID",
@@ -340,40 +1344,70 @@
             {
                 "TERM": 70,
                 "TERM_DESC": "Spring",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
                 "START": "6/9/2027",
                 "END": null,
                 "EVENT_CODE": "WID",
                 "EVENT_DESCRIPTION": "Last Day to Withdraw"
             }
         ],
-        "3S|3S|3S": [
+        "3X|2X|2X": [
             {
                 "TERM": 10,
                 "TERM_DESC": "Summer",
-                "START": "6/22/2026",
-                "END": "8/11/2026",
-                "EVENT_CODE": "TRM",
-                "EVENT_DESCRIPTION": "Term Duration"
-            },
-            {
-                "TERM": 30,
-                "TERM_DESC": "Fall",
-                "START": "8/30/2026",
-                "END": "1/10/2027",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - NYSCAS - ASA College",
+                "START": "6/30/2026",
+                "END": "8/19/2026",
                 "EVENT_CODE": "TRM",
                 "EVENT_DESCRIPTION": "Term Duration"
             },
             {
                 "TERM": 70,
                 "TERM_DESC": "Spring",
-                "START": "1/25/2027",
-                "END": "6/9/2027",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "2/1/2027",
+                "END": "6/10/2027",
                 "EVENT_CODE": "TRM",
                 "EVENT_DESCRIPTION": "Term Duration"
             },
             {
                 "TERM": 30,
                 "TERM_DESC": "Fall",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "9/2/2026",
+                "END": "1/23/2027",
+                "EVENT_CODE": "TRM",
+                "EVENT_DESCRIPTION": "Term Duration"
+            },
+            {
+                "TERM": 10,
+                "TERM_DESC": "Summer",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - NYSCAS - ASA College",
+                "START": "3/23/2026",
+                "END": "3/23/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 70,
+                "TERM_DESC": "Spring",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "11/10/2026",
+                "END": "11/10/2026",
+                "EVENT_CODE": "REG",
+                "EVENT_DESCRIPTION": "Registration Open"
+            },
+            {
+                "TERM": 30,
+                "TERM_DESC": "Fall",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
                 "START": "3/23/2026",
                 "END": "3/23/2026",
                 "EVENT_CODE": "REG",
@@ -382,23 +1416,9 @@
             {
                 "TERM": 10,
                 "TERM_DESC": "Summer",
-                "START": "3/23/2026",
-                "END": "3/23/2026",
-                "EVENT_CODE": "REG",
-                "EVENT_DESCRIPTION": "Registration Open"
-            },
-            {
-                "TERM": 70,
-                "TERM_DESC": "Spring",
-                "START": "11/9/2026",
-                "END": "11/9/2026",
-                "EVENT_CODE": "REG",
-                "EVENT_DESCRIPTION": "Registration Open"
-            },
-            {
-                "TERM": 10,
-                "TERM_DESC": "Summer",
-                "START": "8/11/2026",
+                "POT_KEY": "3X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - NYSCAS - ASA College",
+                "START": "8/19/2026",
                 "END": null,
                 "EVENT_CODE": "WID",
                 "EVENT_DESCRIPTION": "Last Day to Withdraw"
@@ -406,7 +1426,9 @@
             {
                 "TERM": 70,
                 "TERM_DESC": "Spring",
-                "START": "6/9/2027",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "6/10/2027",
                 "END": null,
                 "EVENT_CODE": "WID",
                 "EVENT_DESCRIPTION": "Last Day to Withdraw"
@@ -414,7 +1436,9 @@
             {
                 "TERM": 30,
                 "TERM_DESC": "Fall",
-                "START": "1/10/2027",
+                "POT_KEY": "2X",
+                "ROLLUP_FRIENDLY_NAME": "NY Sch. of Career \u0026 App. Stu. - General",
+                "START": "1/23/2027",
                 "END": null,
                 "EVENT_CODE": "WID",
                 "EVENT_DESCRIPTION": "Last Day to Withdraw"

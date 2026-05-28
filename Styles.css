@@ -1,331 +1,497 @@
 /* Base */
 body {
-    font-family: Verdana, Arial, sans-serif;
-    background-color: #d6d6d6;
+  font-family: Verdana, Arial, sans-serif;
+  background-color: #d6d6d6;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+  }
+
+  .preheader {
+  display: none;
+  font-size: 1px;
+  color: #ffffff;
+  line-height: 1px;
+  max-height: 0;
+  max-width: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin-right: 100%;
+  }
+  /* This is the layout  */
+  .wrapper {
+    width: 100%;
     margin: 0;
     padding: 0;
-    }
-  
-    .preheader {
-    display: none;
-    font-size: 1px;
+    border-collapse: collapse;
+    word-wrap: break-word;
+  }
+  /* Header */
+  .header td {
+  background-color: #0033a0;
+  padding: 20px;
+  vertical-align: middle;
+  }
+  /*Deals with the logo*/
+  .logo { width: auto; }
+  .logo img { max-width: 100%; height: auto; }
+  .heading { color: #ffffff; }
+  .heading h1 {
+  margin: 0 0 6px 0;
+  font-size: 24px; /* similar to size='+2' */
+  }
+  .subtitle { color: #ffffff; font-size: 14px; }
+  /*
+  .year-nav {
+    margin-top: 10px;
     color: #ffffff;
-    line-height: 1px;
-    max-height: 0;
-    max-width: 0;
-    opacity: 0;
-    overflow: hidden;
-    margin-right: 100%;
-    }
-    /* This is the layout  */
-    .wrapper {
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      border-collapse: collapse;
-    }
-    /* Header */
-    .header td {
-    background-color: #0033a0;
-    padding: 20px;
-    vertical-align: middle;
-    }
-    /*Deals with the logo*/
-    .logo { width: 33%; }
-    .heading { width: 66%; color: #ffffff; }
-    .heading h1 {
-    margin: 0 0 6px 0;
-    font-size: 24px; /* similar to size='+2' */
-    }
-    .subtitle { color: #ffffff; font-size: 14px; }
-    /* Content rows */
-    .content { background-color: #ffffff; padding: 20px; }
-    .center { text-align: center; }
-    /* Footer spacer (blue bar) */
-    .footer-spacer { background-color: #0033a0; padding: 20px; }
-    /* ===== Three-panel layout ===== */
-    .layout {
-    display: grid;
-    grid-template-columns: 60fr 40fr; /* 60% calendar, 40% side panels */
-    gap: 16px;
-    align-items: stretch; /* equal-height columns */
-    }
-    /* Right column is two equal-height panels */
-    .side-column {
-    display: grid;
-    grid-template-rows: 1fr 1fr; /* two equal panels */
-    gap: 16px;
-    }
-    /* Panel look: very thin black outline + slight rounding */
-    .panel {
-    background: #fff;
-    border: 1px solid #111; /* very thin black outline */
-    border-radius: 8px; /* slightly rounded */
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    }
-    /* Panel header */
-    .panel-header {
-    padding: 12px 14px;
-    border-bottom: 1px solid #e5e5e5;
-    background: #f7f7f7;
-    }
-    .panel-header h2 {
-    margin: 0;
-    font-size: 18px;
-    }
-    /* Blue/white header variant (matches logo bar) */
-    .panel-header.blue-header {
-    background-color: #0033a0;
-    color: #ffffff;
-    border-bottom: none;
-    }
-    .panel-header.blue-header h2 { color: #ffffff; }
-    .muted { margin: 4px 0 0 0; font-size: 12px; color: #666; }
-    .muted.inverted { color: #e6eefc; }
-    /* Panel body */
-    .panel-body {
-    padding: 14px;
-    flex: 1;
-    overflow: auto;
-    }
-    /* ===== Calendar grid (2 columns × 6 rows with perfect squares) ===== */
-    .calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 equal columns that fit container */
-    grid-template-rows: repeat(6, 1fr); /* 6 equal rows */
-    gap: 8px;
-    padding: 14px;
-    height: 100%; /* Fill the panel height */
-    width: 100%; /* Fill the panel width */
-    box-sizing: border-box;
-    }
-    
-    /* Month card - enforced square with aspect ratio */
-    .month {
-    border: 1px solid #ddd;
+    font-size: 14px;
+  }
+  .year-nav label {
+    margin-right: 8px;
+  }
+  .year-nav select {
+    padding: 4px 8px;
     border-radius: 4px;
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-    background: #fff;
-    aspect-ratio: 1/1; /* Perfect square */
-    width: 100%; /* Fill grid cell */
-    height: 100%; /* Fill grid cell */
-    box-sizing: border-box;
-    min-width: 0; /* Allow shrinking */
-    min-height: 0; /* Allow shrinking */
-    }
-    
-    .month h3 {
-    margin: 0 0 6px 0;
-    font-size: clamp(10px, 1.2vw, 14px); /* Responsive font size */
-    line-height: 1.1;
-    text-align: center;
-    flex-shrink: 0; /* Don't compress the header */
-    }
-    
-    /* Mini-month grid (labels + days) */
-    .month .days {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr); /* 7 weekdays */
-    grid-template-rows: repeat(7, 1fr); /* 1 label row + 6 day rows max */
-    gap: .5px;
-    column-gap: 10px;
-    font-size: clamp(15px, 0.8vw, 11px); /* Responsive font size */
-    flex: 1; /* Takes remaining space */
-    min-height: 0; /* Allows shrinking */
-    }
-    
-    .day {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    aspect-ratio: 1/1; /* Square day cells */
-    border-radius: 2px;
-    font-weight: 500;
-    min-width: 0;
-    min-height: 0;
-    border: 1px solid lightgray;
-  
-    }
-    
-    /* Day-of-week labels row */
-    .day.label {
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    color: #0033a0;
     font-weight: bold;
-    font-size: clamp(16px, 0.7vw, 9px); /* Responsive label font */
-    color: black;
-    border-color: white;
-    }
-  
-    /* Event color coding by term - Updated Color Palette */
-  .eventone.summer {
-    background-color:  #4AA8D8; /* Dark Orange */
-    color: white;
+    font-size: 14px;
+    cursor: pointer;
+  }
+    */
+  /* Content rows */
+  .content { background-color: #ffffff; padding: 20px; }
+  .center { text-align: center; }
+  /* Footer spacer (blue bar) */
+  .footer-spacer { background-color: #0033a0; padding: 20px; }
+  /* ===== Three-panel layout ===== */
+  .layout {
+  display: grid;
+  grid-template-columns: 60fr 40fr; /* 60% calendar, 40% side panels */
+  gap: 16px;
+  align-items: stretch; /* equal-height columns */
+  }
+  /* Right column is two equal-height panels */
+  .side-column {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* two equal panels */
+  gap: 16px;
+  }
+  /* Panel look: very thin black outline + slight rounding */
+  .panel {
+  background: #fff;
+  border: 1px solid #111; /* very thin black outline */
+  border-radius: 8px; /* slightly rounded */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  }
+  /* Panel header */
+  .panel-header {
+  padding: 12px 14px;
+  border-bottom: 1px solid #e5e5e5;
+  background: #f7f7f7;
+  }
+  .panel-header h2 {
+  margin: 0;
+  font-size: 18px;
+  }
+  /* Blue/white header variant (matches logo bar) */
+  .panel-header.blue-header {
+  background-color: #0033a0;
+  color: #ffffff;
+  border-bottom: none;
+  }
+  .panel-header.blue-header h2 { color: #ffffff; }
+  .muted { margin: 4px 0 0 0; font-size: 12px; color: #666; }
+  .muted.inverted { color: #e6eefc; }
+  /* Panel body */
+  .panel-body {
+  padding: 14px;
+  flex: 1;
+  overflow: auto;
+  }
+  /* ===== Calendar grid (2 columns × 6 rows with perfect squares) ===== */
+  .calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns that fit container */
+  grid-template-rows: repeat(6, 1fr); /* 6 equal rows */
+  gap: 8px;
+  padding: 14px;
+  height: 100%; /* Fill the panel height */
+  width: 100%; /* Fill the panel width */
+  box-sizing: border-box;
   }
   
-  .eventone.fall {
-    background-color: #F4C542; /* Dark Red/Burgundy */
-    color: white;
+  /* Month card - enforced square with aspect ratio */
+  .month {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  aspect-ratio: 1/1; /* Perfect square */
+  width: 100%; /* Fill grid cell */
+  height: 100%; /* Fill grid cell */
+  box-sizing: border-box;
+  min-width: 0; /* Allow shrinking */
+  min-height: 0; /* Allow shrinking */
   }
   
-  .eventone.spring {
-    background-color:#004B8D; /* Forest Green */
-    color: white;
+  .month h3 {
+  margin: 0 0 6px 0;
+  font-size: clamp(10px, 1.2vw, 14px); /* Responsive font size */
+  line-height: 1.1;
+  text-align: center;
+  flex-shrink: 0; /* Don't compress the header */
   }
   
+  /* Mini-month grid (labels + days) */
+  .month .days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 weekdays */
+  grid-template-rows: repeat(7, 1fr); /* 1 label row + 6 day rows max */
+  gap: .5px;
+  column-gap: 10px;
+  font-size: clamp(11px, 0.8vw, 15px); /* Responsive font size */
+  flex: 1; /* Takes remaining space */
+  min-height: 0; /* Allows shrinking */
+  }
   
-  .eventone {
-    border: 1px solid white;
-    border-radius: 6px;
-    padding: 8px;
-    margin-bottom: 7px;
+  .day {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1/1; /* Square day cells */
+  border-radius: 2px;
+  font-weight: 500;
+  min-width: 0;
+  min-height: 0;
+  border: 1px solid lightgray;
+
+  }
+  
+  /* Day-of-week labels row */
+  .day.label {
+  font-weight: bold;
+  font-size: clamp(9px, 0.7vw, 16px); /* Responsive label font */
+  color: black;
+  border-color: white;
+  }
+
+  /* Event color coding by term - Updated Color Palette */
+.eventone.summer {
+  background-color:  #4AA8D8; /* Dark Orange */
+  color: white;
+}
+
+.eventone.fall {
+  background-color: #F4C542; /* Dark Red/Burgundy */
+  color: white;
+}
+
+.eventone.spring {
+  background-color:#004B8D; /* Forest Green */
+  color: white;
+}
+
+
+.eventone {
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 7px;
+  list-style: none;
+  min-height: 50px
+}
+
+
+  ul.mini-events {
+    padding: 0;
+    margin: 0;
     list-style: none;
-    height: 50px
   }
-  
-  
-    ul.mini-events {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    }
-    ul.mini-calculations{
-      padding: 0;
-      margin: 0;
-      list-style: none;
-  
-    }
-    .calculation-item{
-    border: 1px solid white;
-    border-radius: 6px;
-    padding: 8px;
-    margin-bottom: 7px;
+  ul.mini-calculations{
+    padding: 0;
+    margin: 0;
     list-style: none;
-    height: 50px
-    }
-  
-    
-    .calculation-item.spring {
-      background-color: #004B8D !important;
-      color: white !important;
-    }
-    
-    .calculation-item.summer {
-      background-color: #4AA8D8 !important;
-      color: white !important;
-    }
-    
-    .calculation-item.fall {
-      background-color: #F4C542 !important;
-      color: white !important;
-    }
-    
-    
-    /* ===== Responsiveness ===== */
-    @media (max-width: 1100px) {
-    .layout { 
-    grid-template-columns: 1fr; /* stack columns */
-    }
-    .side-column { 
-    grid-template-rows: auto; 
-    }
-    }
-    
-    @media (max-width: 768px) {
-    .calendar-grid {
-    grid-template-columns: 1fr; /* Single column on mobile */
-    grid-template-rows: repeat(12, 1fr); /* 12 rows for 12 months */
-    gap: 6px;
-    }
-    }
-    
-    /* Term highlighting for calendar days - Updated Color Palette */
-  .day.spring-term {
-    background-color: #004B8D !important; 
+
+  }
+  .calculation-item{
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 8px;
+  margin-bottom: 7px;
+  list-style: none;
+  min-height: 50px
+  }
+
+
+  .calculation-item.spring {
+    background-color: #004B8D !important;
     color: white !important;
   }
   
-  .day.summer-term {
-    background-color: #4AA8D8 !important; 
+  .calculation-item.summer {
+    background-color: #4AA8D8 !important;
     color: white !important;
   }
   
-  .day.fall-term {
-    background-color:  #F4C542 !important; 
+  .calculation-item.fall {
+    background-color: #F4C542 !important;
     color: white !important;
   }
   
-  .legend{
-    margin-left:50px;
+  
+  /* ===== Responsiveness ===== */
+  @media (max-width: 1100px) {
+  .layout { 
+  grid-template-columns: 1fr; /* stack columns */
   }
-  .legend-term p{
-    display: inline-block;
-    margin-left: 30px;
-    margin-top:5px;
-    margin-bottom:20px;
-    
+  .side-column { 
+  grid-template-rows: auto; 
+  }
   }
   
-  .spring-term-legend{
+  /*expanded mobile breakpoint for full device support */
+  @media (max-width: 768px) {
+  .calendar-grid {
+  grid-template-columns: 1fr; /* Single column on mobile */
+  grid-template-rows: auto; /* Let months size naturally */
+  gap: 6px;
+  }
+
+  /*force table to behave as block layout on mobile */
+  .wrapper,
+  .wrapper tbody,
+  .wrapper tr,
+  .wrapper td {
+  display: block !important;
+  width: 100% !important;
+  box-sizing: border-box !important;
+  }
+  .layout {
+  width: 100% !important;
+  box-sizing: border-box;
+  overflow: hidden;
+  }
+  .header td {
+  text-align: center;
+  }
+  .logo img {
+  max-width: 200px;
+  height: auto;
+  }
+
+  /*reduce content padding on mobile */
+  .content {
+  padding: 10px;
+  }
+
+  /*wrap legend items vertically on mobile */
+  .legend {
+  margin-left: 0;
+  }
+  .legend-term > span {
+  display: block;
+  margin-left: 0;
+  }
+
+  /*let month cards auto-size instead of forced square on mobile */
+  .month {
+  aspect-ratio: auto;
+  }
+
+  /*scale summary text for mobile */
+  summary {
+  font-size: 14px;
+  padding: 8px;
+  }
+  }
+  
+  /* Term highlighting for calendar days - Updated Color Palette */
+.day.spring-term {
+  background-color: #004B8D !important; 
+  color: white !important;
+}
+
+.day.summer-term {
+  background-color: #4AA8D8 !important; 
+  color: white !important;
+}
+
+.day.fall-term {
+  background-color:  #F4C542 !important; 
+  color: white !important;
+}
+
+.legend{
+  margin-left:50px;
+}
+.legend-term > span{
+  display: inline-block;
+  margin-left: 30px;
+  margin-top:5px;
+  margin-bottom:20px;
+
+}
+
+.spring-term-legend{
+  display: inline-block;
+  height:20px;
+  width:20px;
+  vertical-align: middle;
+  border: solid 2px lightgray;
+  background-color: #004B8D;
+
+}
+
+  .fall-term-legend{
     display: inline-block;
     height:20px;
     width:20px;
     vertical-align: middle;
     border: solid 2px lightgray;
-    background-color: #004B8D;
-  
+    background-color: #F4C542 ;
+
+
+  }
+
+  .summer-term-legend{
+    display: inline-block;
+    height:20px;
+    width:20px;
+    vertical-align: middle;
+    border: solid 2px lightgray;
+    background-color:#4AA8D8; 
+
+
+  }
+
+  .day.overlap-term {
+    background-color: red !important;
+    color: white !important;
+  }
+
+  .overlap-item{
+    border: 1px solid white;
+    border-radius: 6px;
+    padding: 8px;
+    margin-bottom: 7px;
+    list-style: none;
+    min-height: 50px;
+    background-color: red !important;
+    color: white;
+    }
+
+  summary {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #0033a0;
+    color: white;
+    border-radius: 4px;
   }
   
-    .fall-term-legend{
-      display: inline-block;
-      height:20px;
-      width:20px;
-      vertical-align: middle;
-      border: solid 2px lightgray;
-      background-color: #F4C542 ;
-  
-  
+  summary:hover {
+    background-color: #002580;
+  }
+
+  /*friendly name and pot key styling on accordion */
+  .school-names {
+    display: block;
+  }
+  .school-friendly-name {
+    display: block;
+    line-height: 1.4;
+  }
+  .school-pot-key {
+    display: block;
+    font-weight: normal;
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 4px;
+  }
+
+  /* ===== Print styles ===== */
+  @media print {
+    /* Force browsers to print background colors */
+    * {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
     }
-  
-    .summer-term-legend{
-      display: inline-block;
-      height:20px;
-      width:20px;
-      vertical-align: middle;
-      border: solid 2px lightgray;
-      background-color:#4AA8D8; 
-  
-  
+
+    body {
+      background: white;
+      overflow: visible;
+      width: 100%;
     }
-  
-    .day.overlap-term {
-      background-color: red !important;
-      color: white !important;
+
+    /* Remove gray background, use full width */
+    .wrapper,
+    .wrapper tbody,
+    .wrapper tr,
+    .wrapper td {
+      display: block !important;
+      width: 100% !important;
+      background: white;
     }
-  
-    .overlap-item{
-      border: 1px solid white;
-      border-radius: 6px;
-      padding: 8px;
-      margin-bottom: 7px;
+
+    /* Keep header styling but make it print-friendly */
+    .header td {
+      text-align: center;
+    }
+
+    /* Force all <details> open so all schools print */
+    details {
+      display: block !important;
+    }
+    details > summary {
       list-style: none;
-      height: 50px;
-      background-color: red !important;
-      color: white;
-      }
-  
-    summary {
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 18px;
-      padding: 10px;
-      background-color: #0033a0;
-      color: white;
-      border-radius: 4px;
+      cursor: default;
     }
-    
-    summary:hover {
-      background-color: #002580;
+    details > summary::-webkit-details-marker {
+      display: none;
     }
+
+    /* Stack layout for paper */
+    .layout {
+      display: block !important;
+    }
+    .side-column {
+      display: block !important;
+    }
+    .panel {
+      break-inside: avoid;
+      margin-bottom: 16px;
+    }
+
+    /* Calendar grid: 2 columns still works on paper */
+    .calendar-grid {
+      break-inside: avoid;
+    }
+    .month {
+      break-inside: avoid;
+      aspect-ratio: auto;
+    }
+
+    /* Each school on its own page */
+    .content {
+      break-before: page;
+    }
+
+    /* Hide footer spacer */
+    .footer-spacer {
+      display: none;
+    }
+
+    /* Remove border-radius for cleaner print */
+    .panel, summary {
+      border-radius: 0;
+    }
+  }
